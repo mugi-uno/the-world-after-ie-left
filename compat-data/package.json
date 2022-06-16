@@ -2,9 +2,11 @@
   "name": "compat-data",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/IENonSupportedCompatTable.js",
+  "module": "dist/IENonSupportedCompatTable.js",
   "scripts": {
-    "generate": "ts-node -T ./lib/generate.ts"
+    "generate": "ts-node -T ./lib/generate.ts",
+    "build": "tsc"
   },
   "keywords": [],
   "author": "",

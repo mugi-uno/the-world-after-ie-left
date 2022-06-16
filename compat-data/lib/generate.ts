@@ -24,7 +24,9 @@ console.log(`MDN_REPO: ${mdnRepo}`);
   const json = await createIENonSupportedTable(mdnRepo);
 
   fs.writeFileSync(
-    path.resolve(__dirname, "../tables/", "IENonSupportedCompatTable.json"),
-    JSON.stringify(json)
+    path.resolve(__dirname, "../tables/", "IENonSupportedCompatTable.ts"),
+    `export const IENonSupportedCompatTable = ${JSON.stringify(
+      json
+    )} as unknown as FlattenJson;`
   );
 })();

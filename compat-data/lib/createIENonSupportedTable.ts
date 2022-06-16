@@ -49,29 +49,6 @@ const convertAllJsonToTable = (texts: string[]) => {
   return removeIEEnabledFeature(flatted);
 };
 
-type Browsers = "chrome" | "edge" | "firefox" | "ie" | "safari";
-
-type CompatJson = {
-  [key: string]: CompatJson | CompatTable;
-} & {
-  __compat?: CompatTable;
-};
-
-type CompatTable = {
-  description?: string;
-  mdn_url: string;
-  spec_url: string;
-  support: {
-    [key in Browsers]: {
-      version_added: string | false;
-    };
-  };
-};
-
-type FlattenJson = {
-  [key: string]: CompatTable;
-};
-
 const removeIEEnabledFeature = (flatted: FlattenJson): FlattenJson => {
   const result: FlattenJson = {};
 
