@@ -25,8 +25,10 @@ console.log(`MDN_REPO: ${mdnRepo}`);
 
   fs.writeFileSync(
     path.resolve(__dirname, "../tables/", "IENonSupportedCompatTable.ts"),
-    `export const IENonSupportedCompatTable = ${JSON.stringify(
-      json
-    )} as unknown as FlattenJson;`
+    `
+      import type { FlattenJson } from './../types/type';
+      export const IENonSupportedCompatTable = ${JSON.stringify(
+        json
+      )} as unknown as FlattenJson;`
   );
 })();

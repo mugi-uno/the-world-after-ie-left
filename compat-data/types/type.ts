@@ -1,12 +1,12 @@
-declare type Browsers = "chrome" | "edge" | "firefox" | "ie" | "safari";
+export type Browsers = "chrome" | "edge" | "firefox" | "ie" | "safari";
 
-declare type CompatJson = {
+export type CompatJson = {
   [key: string]: CompatJson | CompatTable;
 } & {
   __compat?: CompatTable;
 };
 
-declare type CompatTable = {
+export type CompatTable = {
   description?: string;
   mdn_url?: string;
   spec_url?: string;
@@ -17,6 +17,6 @@ declare type CompatTable = {
   };
 };
 
-declare type FlattenJson = {
+export type FlattenJson = {
   [key: string]: CompatTable;
 };

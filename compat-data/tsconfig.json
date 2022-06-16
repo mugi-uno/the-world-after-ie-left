@@ -3,8 +3,9 @@
   "compilerOptions": {
     "target": "ESNext",
     "outDir": "./dist",
+    "module": "CommonJS",
     "moduleResolution": "node",
     "declaration": true
   },
-  "include": ["./tables/**/*", "./@types/**/*"]
+  "include": ["./tables/**/*"]
 }

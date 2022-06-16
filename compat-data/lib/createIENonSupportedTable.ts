@@ -1,6 +1,7 @@
 import * as fs from "fs";
 import * as path from "path";
 import deepmerge from "deepmerge";
+import { CompatJson, FlattenJson } from "../types/type";
 
 const JS_COMPAT_DIR = "javascript";
 
