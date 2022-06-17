@@ -6,20 +6,18 @@ export type CompatJson = {
   __compat?: CompatTable;
 };
 
+export type Support = {
+  version_added?: string | boolean;
+  partial_implementation?: boolean;
+  prefix?: string;
+};
+
 export type CompatTable = {
   description?: string;
   mdn_url?: string;
   spec_url?: string;
   support: {
-    [key in Browsers]?:
-      | {
-          version_added?: string | boolean;
-          prefix?: string;
-        }[]
-      | {
-          version_added: string | boolean;
-        }
-      | "mirror";
+    [key in Browsers]?: Support[] | Support | "mirror";
   };
 };
 

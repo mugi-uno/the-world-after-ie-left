@@ -176,7 +176,6 @@
 - `css.properties.margin-block-start` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/margin-block-start) | [🔗spec](https://drafts.csswg.org/css-logical/#margin-properties)
 - `css.properties.margin-inline-end` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/margin-inline-end) | [🔗spec](https://drafts.csswg.org/css-logical/#margin-properties)
 - `css.properties.margin-inline-start` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/margin-inline-start) | [🔗spec](https://drafts.csswg.org/css-logical/#margin-properties)
-- `css.properties.mask` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/mask) | [🔗spec](https://drafts.fxtf.org/css-masking/#the-mask)
 - `css.properties.mask-image.multiple_mask_images`
 - `css.properties.mask-image.svg_masks`
 - `css.properties.mask-type` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/mask-type) | [🔗spec](https://drafts.fxtf.org/css-masking/#the-mask-type)

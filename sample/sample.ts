@@ -3,7 +3,7 @@ import { IENonSupportedCompatTable } from "compat-data";
 import semver from "semver";
 import * as fs from "fs";
 import * as path from "path";
-import type { Browsers } from "compat-data/dist/types/type";
+import type { Browsers, Support } from "compat-data/dist/types/type";
 
 const CHROME = "92.0.0";
 const SAFARI = "14.0.0";
@@ -20,6 +20,25 @@ const formatVersion = (ver: string) => {
   return vers.join(".");
 };
 
+const isValidSupport = (support: Support) => {
+  if (support.prefix || support.partial_implementation) return false;
+
+  if (!support.version_added) return false;
+  if (support.version_added === true) return true;
+  if (support.version_added.includes("≤")) return false;
+
+  return true;
+};
+
+const isValidVersion = (
+  ver: string | boolean | undefined
+): ver is string | true => {
+  if (!ver) return false;
+  if (ver === true) return true;
+  if (ver.includes("≤")) return false;
+  return true;
+};
+
 const checkVersion = (
   support: FlattenJson[string]["support"][Browsers] | undefined,
   expectVersion: string,
@@ -34,21 +53,16 @@ const checkVersion = (
   let ver: string | boolean | undefined;
 
   if ("length" in support) {
-    const s = support.find((s) => !s.prefix);
+    const s = support.find((s) => isValidSupport(s));
     ver = s?.version_added;
   } else {
     ver = support.version_added;
   }
 
+  if (!isValidVersion(ver)) return false;
   if (ver === true) return true;
-  if (!ver) return false;
 
-  if (ver.includes("≤")) {
-    // disabled deprecated feature
-    return false;
-  }
-
-  return !!(ver && semver.lte(formatVersion(ver), expectVersion));
+  return semver.lte(formatVersion(ver), expectVersion);
 };
 
 const features = Object.keys(IENonSupportedCompatTable).filter((key) => {
