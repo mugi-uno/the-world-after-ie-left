@@ -57,9 +57,27 @@ const removeIEEnabledFeature = (flatted: FlattenJson): FlattenJson => {
 
   Object.keys(flatted).forEach((key) => {
     const compat = flatted[key];
+
     if (!compat) return;
 
-    if (!compat.support.ie?.version_added) {
+    const ie = compat.support.ie;
+
+    if (ie === "mirror") return;
+
+    if (!ie) {
+      result[key] = compat;
+      return;
+    }
+
+    if ("length" in ie) {
+      // add partial implementation feature
+      if (ie.some((s) => s.version_added && s.partial_implementation)) {
+        result[key] = compat;
+      }
+      return;
+    }
+
+    if (!ie.version_added) {
       result[key] = compat;
     }
   });

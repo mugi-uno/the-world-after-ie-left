@@ -96,3 +96,5 @@ const texts = features
   });
 
 fs.writeFileSync(path.resolve(__dirname, "list.md"), texts.join("\n"));
+
+console.log(`total: ${texts.length}`);
