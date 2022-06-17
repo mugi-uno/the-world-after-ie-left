@@ -4,13 +4,15 @@ import deepmerge from "deepmerge";
 import { CompatJson, FlattenJson } from "../types/type";
 
 const JS_COMPAT_DIR = "javascript";
+const CSS_COMPAT_DIR = "css";
+const HTML_COMPAT_DIR = "html";
 
 export const createIENonSupportedTable = async (mdnRepo: string) => {
-  const jsCompatDir = path.resolve(mdnRepo, JS_COMPAT_DIR);
+  const jsFiles = await recursiveRead(path.resolve(mdnRepo, JS_COMPAT_DIR));
+  const cssFiles = await recursiveRead(path.resolve(mdnRepo, CSS_COMPAT_DIR));
+  const htmlFiles = await recursiveRead(path.resolve(mdnRepo, HTML_COMPAT_DIR));
 
-  const files = await recursiveRead(jsCompatDir);
-
-  const table = convertAllJsonToTable(files);
+  const table = convertAllJsonToTable([...jsFiles, ...cssFiles, ...htmlFiles]);
 
   return table;
 };

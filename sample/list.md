@@ -1,0 +1,804 @@
+- `css.at-rules.font-face.WOFF_2` | [🔗mdn](https://developer.mozilla.org/docs/Web/Guide/WOFF) | [🔗spec](https://w3c.github.io/woff/woff2/#FileStructure)
+- `css.at-rules.font-face.font-display` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/@font-face/font-display) | [🔗spec](https://drafts.csswg.org/css-fonts/#font-display-desc)
+- `css.at-rules.font-face.font-stretch` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/@font-face/font-stretch) | [🔗spec](https://drafts.csswg.org/css-fonts/#font-prop-desc)
+- `css.at-rules.font-face.src.format_variations`
+- `css.at-rules.keyframes.ignore_important_declarations`
+- `css.at-rules.media.-webkit-device-pixel-ratio` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/@media/-webkit-device-pixel-ratio) | [🔗spec](https://compat.spec.whatwg.org/#css-media-queries-webkit-device-pixel-ratio)
+- `css.at-rules.media.-webkit-max-device-pixel-ratio` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/@media/-webkit-device-pixel-ratio) | [🔗spec](https://compat.spec.whatwg.org/#css-media-queries-webkit-device-pixel-ratio)
+- `css.at-rules.media.-webkit-min-device-pixel-ratio` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/@media/-webkit-device-pixel-ratio) | [🔗spec](https://compat.spec.whatwg.org/#css-media-queries-webkit-device-pixel-ratio)
+- `css.at-rules.media.-webkit-transform-3d` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/@media/-webkit-transform-3d) | [🔗spec](https://compat.spec.whatwg.org/#css-media-queries-webkit-transform-3d)
+- `css.at-rules.media.any-hover` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/@media/any-hover) | [🔗spec](https://drafts.csswg.org/mediaqueries/#any-input)
+- `css.at-rules.media.any-pointer` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/@media/any-pointer) | [🔗spec](https://drafts.csswg.org/mediaqueries/#any-input)
+- `css.at-rules.media.calc` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/calc()) | [🔗spec](https://drafts.csswg.org/css-values/#calc-notation)
+- `css.at-rules.media.display-mode` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/@media/display-mode) | [🔗spec](https://drafts.csswg.org/mediaqueries-5/#display-mode)
+- `css.at-rules.media.hover` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/@media/hover) | [🔗spec](https://drafts.csswg.org/mediaqueries/#hover)
+- `css.at-rules.media.monochrome` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/@media/monochrome) | [🔗spec](https://drafts.csswg.org/mediaqueries/#monochrome)
+- `css.at-rules.media.nested-queries`
+- `css.at-rules.media.pointer` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/@media/pointer) | [🔗spec](https://drafts.csswg.org/mediaqueries/#pointer)
+- `css.at-rules.media.prefers-color-scheme` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/@media/prefers-color-scheme) | [🔗spec](https://drafts.csswg.org/mediaqueries-5/#prefers-color-scheme)
+- `css.at-rules.media.prefers-color-scheme.no-preference`
+- `css.at-rules.media.prefers-reduced-motion` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/@media/prefers-reduced-motion) | [🔗spec](https://drafts.csswg.org/mediaqueries-5/#prefers-reduced-motion)
+- `css.at-rules.supports` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/@supports) | [🔗spec](https://drafts.csswg.org/css-conditional-4/#at-supports-ext,https://drafts.csswg.org/css-conditional-3/#at-supports)
+- `css.properties.-webkit-line-clamp` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/-webkit-line-clamp) | [🔗spec](https://drafts.csswg.org/css-overflow/#webkit-line-clamp)
+- `css.properties.-webkit-mask-composite` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/-webkit-mask-composite)
+- `css.properties.-webkit-mask-position-x` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/-webkit-mask-position-x)
+- `css.properties.-webkit-mask-position-y` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/-webkit-mask-position-y)
+- `css.properties.-webkit-text-fill-color` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/-webkit-text-fill-color) | [🔗spec](https://compat.spec.whatwg.org/#the-webkit-text-fill-color)
+- `css.properties.-webkit-text-stroke` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/-webkit-text-stroke) | [🔗spec](https://compat.spec.whatwg.org/#the-webkit-text-stroke)
+- `css.properties.-webkit-text-stroke-color` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/-webkit-text-stroke-color) | [🔗spec](https://compat.spec.whatwg.org/#the-webkit-text-stroke-color)
+- `css.properties.-webkit-text-stroke-width` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/-webkit-text-stroke-width) | [🔗spec](https://compat.spec.whatwg.org/#the-webkit-text-stroke-width)
+- `css.properties.align-content.flex_context.space-evenly`
+- `css.properties.align-content.flex_context.stretch`
+- `css.properties.align-content.grid_context` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/align-content) | [🔗spec](https://drafts.csswg.org/css-align/#align-justify-content,https://drafts.csswg.org/css-flexbox/#align-content-property)
+- `css.properties.align-items.grid_context` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/align-items) | [🔗spec](https://drafts.csswg.org/css-align/#align-items-property,https://drafts.csswg.org/css-flexbox/#align-items-property)
+- `css.properties.align-items.grid_context.start_end`
+- `css.properties.align-self.flex_context.stretch`
+- `css.properties.all` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/all) | [🔗spec](https://drafts.csswg.org/css-cascade/#all-shorthand)
+- `css.properties.animation-timing-function.jump`
+- `css.properties.appearance.compat-auto`
+- `css.properties.appearance.menulist-button`
+- `css.properties.appearance.none`
+- `css.properties.appearance.textfield`
+- `css.properties.backdrop-filter` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/backdrop-filter) | [🔗spec](https://drafts.fxtf.org/filter-effects-2/#BackdropFilterProperty)
+- `css.properties.background-blend-mode` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/background-blend-mode) | [🔗spec](https://drafts.fxtf.org/compositing/#background-blend-mode)
+- `css.properties.background-clip.text`
+- `css.properties.block-size` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/block-size) | [🔗spec](https://drafts.csswg.org/css-logical/#dimension-properties)
+- `css.properties.block-size.fit-content`
+- `css.properties.block-size.max-content`
+- `css.properties.block-size.min-content`
+- `css.properties.border-block-end` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/border-block-end) | [🔗spec](https://drafts.csswg.org/css-logical/#border-shorthands)
+- `css.properties.border-block-end-color` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/border-block-end-color) | [🔗spec](https://drafts.csswg.org/css-logical/#border-color)
+- `css.properties.border-block-end-style` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/border-block-end-style) | [🔗spec](https://drafts.csswg.org/css-logical/#border-style)
+- `css.properties.border-block-end-width` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/border-block-end-width) | [🔗spec](https://drafts.csswg.org/css-logical/#border-width)
+- `css.properties.border-block-start` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/border-block-start) | [🔗spec](https://drafts.csswg.org/css-logical/#border-shorthands)
+- `css.properties.border-block-start-color` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/border-block-start-color) | [🔗spec](https://drafts.csswg.org/css-logical/#border-color)
+- `css.properties.border-block-start-style` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/border-block-start-style) | [🔗spec](https://drafts.csswg.org/css-logical/#border-style)
+- `css.properties.border-block-start-width` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/border-block-start-width) | [🔗spec](https://drafts.csswg.org/css-logical/#border-width)
+- `css.properties.border-inline-end` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/border-inline-end) | [🔗spec](https://drafts.csswg.org/css-logical/#border-shorthands)
+- `css.properties.border-inline-end-color` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/border-inline-end-color) | [🔗spec](https://drafts.csswg.org/css-logical/#border-color)
+- `css.properties.border-inline-end-style` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/border-inline-end-style) | [🔗spec](https://drafts.csswg.org/css-logical/#border-style)
+- `css.properties.border-inline-end-width` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/border-inline-end-width) | [🔗spec](https://drafts.csswg.org/css-logical/#border-width)
+- `css.properties.border-inline-start` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/border-inline-start) | [🔗spec](https://drafts.csswg.org/css-logical/#border-shorthands)
+- `css.properties.border-inline-start-color` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/border-inline-start-color) | [🔗spec](https://drafts.csswg.org/css-logical/#border-color)
+- `css.properties.border-inline-start-style` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/border-inline-start-style) | [🔗spec](https://drafts.csswg.org/css-logical/#border-style)
+- `css.properties.border-inline-start-width` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/border-inline-start-width) | [🔗spec](https://drafts.csswg.org/css-logical/#border-width)
+- `css.properties.box-decoration-break` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/box-decoration-break) | [🔗spec](https://drafts.csswg.org/css-break/#break-decoration)
+- `css.properties.caret-color` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/caret-color) | [🔗spec](https://drafts.csswg.org/css-ui/#caret-color)
+- `css.properties.clip-path.basic_shape`
+- `css.properties.clip-path.html`
+- `css.properties.clip-path.path`
+- `css.properties.column-gap.grid_context` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/column-gap) | [🔗spec](https://drafts.csswg.org/css-align/#column-row-gap,https://drafts.csswg.org/css-grid/#gutters,https://drafts.csswg.org/css-multicol/#column-gap)
+- `css.properties.content.element_replacement`
+- `css.properties.cursor.grab`
+- `css.properties.cursor.url_positioning_syntax`
+- `css.properties.cursor.vertical-text`
+- `css.properties.cursor.zoom`
+- `css.properties.custom-property` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/--*) | [🔗spec](https://drafts.csswg.org/css-variables/#defining-variables)
+- `css.properties.custom-property.env` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/env()) | [🔗spec](https://drafts.csswg.org/css-env/#env-function)
+- `css.properties.custom-property.env.safe-area-inset-bottom` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/env()) | [🔗spec](https://drafts.csswg.org/css-env/#safe-area-insets)
+- `css.properties.custom-property.env.safe-area-inset-left` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/env()) | [🔗spec](https://drafts.csswg.org/css-env/#safe-area-insets)
+- `css.properties.custom-property.env.safe-area-inset-right` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/env()) | [🔗spec](https://drafts.csswg.org/css-env/#safe-area-insets)
+- `css.properties.custom-property.env.safe-area-inset-top` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/env()) | [🔗spec](https://drafts.csswg.org/css-env/#safe-area-insets)
+- `css.properties.custom-property.var` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/var()) | [🔗spec](https://drafts.csswg.org/css-variables/#using-variables)
+- `css.properties.display.contents`
+- `css.properties.display.flex`
+- `css.properties.display.flow-root`
+- `css.properties.display.inline-block`
+- `css.properties.display.inline-flex`
+- `css.properties.filter` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/filter) | [🔗spec](https://drafts.fxtf.org/filter-effects/#FilterProperty)
+- `css.properties.flex` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/flex) | [🔗spec](https://drafts.csswg.org/css-flexbox/#flex-property)
+- `css.properties.flex-direction` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/flex-direction) | [🔗spec](https://drafts.csswg.org/css-flexbox/#flex-direction-property)
+- `css.properties.flex-grow` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/flex-grow) | [🔗spec](https://drafts.csswg.org/css-flexbox/#flex-grow-property)
+- `css.properties.font-kerning` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/font-kerning) | [🔗spec](https://drafts.csswg.org/css-fonts/#font-kerning-prop)
+- `css.properties.font-optical-sizing` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/font-optical-sizing) | [🔗spec](https://drafts.csswg.org/css-fonts/#font-optical-sizing-def)
+- `css.properties.font-smooth` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/font-smooth)
+- `css.properties.font-stretch.percentage`
+- `css.properties.font-variant-caps` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/font-variant-caps) | [🔗spec](https://drafts.csswg.org/css-fonts/#font-variant-caps-prop)
+- `css.properties.font-variant-east-asian` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/font-variant-east-asian) | [🔗spec](https://drafts.csswg.org/css-fonts/#font-variant-east-asian-prop)
+- `css.properties.font-variant-ligatures` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/font-variant-ligatures) | [🔗spec](https://drafts.csswg.org/css-fonts/#font-variant-ligatures-prop)
+- `css.properties.font-variant-numeric` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/font-variant-numeric) | [🔗spec](https://drafts.csswg.org/css-fonts/#font-variant-numeric-prop)
+- `css.properties.font-variant.css_fonts_shorthand`
+- `css.properties.font-variation-settings` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/font-variation-settings) | [🔗spec](https://drafts.csswg.org/css-fonts/#font-variation-settings-def)
+- `css.properties.font-weight.number`
+- `css.properties.font.font_stretch_support`
+- `css.properties.gap.grid_context` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/gap) | [🔗spec](https://drafts.csswg.org/css-align/#gap-shorthand)
+- `css.properties.gap.grid_context.calc_values`
+- `css.properties.gap.grid_context.percentage_values`
+- `css.properties.grid` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/grid) | [🔗spec](https://drafts.csswg.org/css-grid/#grid-shorthand)
+- `css.properties.grid-area` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/grid-area) | [🔗spec](https://drafts.csswg.org/css-grid/#propdef-grid-area)
+- `css.properties.grid-auto-flow` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/grid-auto-flow) | [🔗spec](https://drafts.csswg.org/css-grid/#grid-auto-flow-property)
+- `css.properties.grid-column` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/grid-column) | [🔗spec](https://drafts.csswg.org/css-grid/#placement-shorthands)
+- `css.properties.grid-column-end` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/grid-column-end) | [🔗spec](https://drafts.csswg.org/css-grid/#line-placement)
+- `css.properties.grid-column-start` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/grid-column-start) | [🔗spec](https://drafts.csswg.org/css-grid/#line-placement)
+- `css.properties.grid-row` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/grid-row) | [🔗spec](https://drafts.csswg.org/css-grid/#placement-shorthands)
+- `css.properties.grid-row-end` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/grid-row-end) | [🔗spec](https://drafts.csswg.org/css-grid/#line-placement)
+- `css.properties.grid-row-start` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/grid-row-start) | [🔗spec](https://drafts.csswg.org/css-grid/#line-placement)
+- `css.properties.grid-template` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/grid-template) | [🔗spec](https://drafts.csswg.org/css-grid/#explicit-grid-shorthand)
+- `css.properties.grid-template-areas` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/grid-template-areas) | [🔗spec](https://drafts.csswg.org/css-grid/#grid-template-areas-property)
+- `css.properties.grid-template-columns.fit-content` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/fit-content) | [🔗spec](https://drafts.csswg.org/css-sizing-4/#sizing-values)
+- `css.properties.grid-template-columns.minmax` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/minmax()) | [🔗spec](https://drafts.csswg.org/css-grid/#valdef-grid-template-columns-minmax)
+- `css.properties.grid-template-columns.repeat` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/repeat()) | [🔗spec](https://drafts.csswg.org/css-grid/#repeat-notation)
+- `css.properties.grid-template-rows.fit-content` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/fit-content) | [🔗spec](https://drafts.csswg.org/css-sizing-4/#sizing-values)
+- `css.properties.grid-template-rows.minmax` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/minmax()) | [🔗spec](https://drafts.csswg.org/css-grid/#valdef-grid-template-columns-minmax)
+- `css.properties.grid-template-rows.repeat` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/repeat()) | [🔗spec](https://drafts.csswg.org/css-grid/#repeat-notation)
+- `css.properties.height.max-content`
+- `css.properties.height.min-content`
+- `css.properties.image-orientation` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/image-orientation) | [🔗spec](https://drafts.csswg.org/css-images/#the-image-orientation)
+- `css.properties.image-rendering` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/image-rendering) | [🔗spec](https://drafts.csswg.org/css-images/#the-image-rendering)
+- `css.properties.image-rendering.crisp-edges`
+- `css.properties.image-rendering.optimizeQuality`
+- `css.properties.image-rendering.optimizeSpeed`
+- `css.properties.inline-size` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/inline-size) | [🔗spec](https://drafts.csswg.org/css-logical/#dimension-properties)
+- `css.properties.inline-size.fit-content`
+- `css.properties.inline-size.max-content`
+- `css.properties.inline-size.min-content`
+- `css.properties.isolation` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/isolation) | [🔗spec](https://drafts.fxtf.org/compositing/#isolation)
+- `css.properties.justify-content.flex_context.space-evenly`
+- `css.properties.justify-content.flex_context.stretch`
+- `css.properties.justify-content.grid_context` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/justify-content) | [🔗spec](https://drafts.csswg.org/css-align/#align-justify-content,https://drafts.csswg.org/css-flexbox/#justify-content-property)
+- `css.properties.justify-items.grid_context` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/justify-items) | [🔗spec](https://drafts.csswg.org/css-align/#justify-items-property)
+- `css.properties.justify-self.flex_context` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/justify-self) | [🔗spec](https://drafts.csswg.org/css-align/#justify-self-property)
+- `css.properties.line-break` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/line-break) | [🔗spec](https://drafts.csswg.org/css-text/#line-break-property)
+- `css.properties.list-style-type.arabic-indic`
+- `css.properties.list-style-type.bengali`
+- `css.properties.list-style-type.cambodian`
+- `css.properties.list-style-type.cjk-earthly-branch`
+- `css.properties.list-style-type.cjk-heavenly-stem`
+- `css.properties.list-style-type.cjk-ideographic`
+- `css.properties.list-style-type.devanagari`
+- `css.properties.list-style-type.ethiopic-halehame-am`
+- `css.properties.list-style-type.ethiopic-halehame-ti-er`
+- `css.properties.list-style-type.ethiopic-halehame-ti-et`
+- `css.properties.list-style-type.gujarati`
+- `css.properties.list-style-type.gurmukhi`
+- `css.properties.list-style-type.hangul`
+- `css.properties.list-style-type.hangul-consonant`
+- `css.properties.list-style-type.hebrew`
+- `css.properties.list-style-type.hiragana`
+- `css.properties.list-style-type.hiragana-iroha`
+- `css.properties.list-style-type.kannada`
+- `css.properties.list-style-type.katakana`
+- `css.properties.list-style-type.katakana-iroha`
+- `css.properties.list-style-type.khmer`
+- `css.properties.list-style-type.lao`
+- `css.properties.list-style-type.lower-armenian`
+- `css.properties.list-style-type.malayalam`
+- `css.properties.list-style-type.mongolian`
+- `css.properties.list-style-type.myanmar`
+- `css.properties.list-style-type.oriya`
+- `css.properties.list-style-type.persian`
+- `css.properties.list-style-type.telugu`
+- `css.properties.list-style-type.thai`
+- `css.properties.list-style-type.tibetan`
+- `css.properties.list-style-type.upper-armenian`
+- `css.properties.list-style-type.urdu`
+- `css.properties.margin-block-end` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/margin-block-end) | [🔗spec](https://drafts.csswg.org/css-scroll-snap/#scroll-padding)
+- `css.properties.margin-block-start` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/margin-block-start) | [🔗spec](https://drafts.csswg.org/css-logical/#margin-properties)
+- `css.properties.margin-inline-end` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/margin-inline-end) | [🔗spec](https://drafts.csswg.org/css-logical/#margin-properties)
+- `css.properties.margin-inline-start` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/margin-inline-start) | [🔗spec](https://drafts.csswg.org/css-logical/#margin-properties)
+- `css.properties.mask` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/mask) | [🔗spec](https://drafts.fxtf.org/css-masking/#the-mask)
+- `css.properties.mask-image.multiple_mask_images`
+- `css.properties.mask-image.svg_masks`
+- `css.properties.mask-type` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/mask-type) | [🔗spec](https://drafts.fxtf.org/css-masking/#the-mask-type)
+- `css.properties.max-block-size` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/max-block-size) | [🔗spec](https://drafts.csswg.org/css-logical/#propdef-max-block-size)
+- `css.properties.max-block-size.max-content`
+- `css.properties.max-block-size.min-content`
+- `css.properties.max-height.fit-content`
+- `css.properties.max-height.max-content`
+- `css.properties.max-height.min-content`
+- `css.properties.max-inline-size` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/max-inline-size) | [🔗spec](https://drafts.csswg.org/css-logical/#propdef-max-inline-size)
+- `css.properties.max-inline-size.fit-content`
+- `css.properties.max-inline-size.max-content`
+- `css.properties.max-inline-size.min-content`
+- `css.properties.max-width.fit-content`
+- `css.properties.max-width.max-content`
+- `css.properties.max-width.min-content`
+- `css.properties.min-block-size` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/min-block-size) | [🔗spec](https://drafts.csswg.org/css-logical/#propdef-min-block-size)
+- `css.properties.min-block-size.max-content`
+- `css.properties.min-block-size.min-content`
+- `css.properties.min-height.auto`
+- `css.properties.min-height.fit-content`
+- `css.properties.min-height.max-content`
+- `css.properties.min-height.min-content`
+- `css.properties.min-inline-size` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/min-inline-size) | [🔗spec](https://drafts.csswg.org/css-logical/#propdef-min-inline-size)
+- `css.properties.min-inline-size.fit-content`
+- `css.properties.min-inline-size.max-content`
+- `css.properties.min-inline-size.min-content`
+- `css.properties.min-width.auto`
+- `css.properties.min-width.fit-content`
+- `css.properties.min-width.max-content`
+- `css.properties.min-width.min-content`
+- `css.properties.mix-blend-mode` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/mix-blend-mode) | [🔗spec](https://drafts.fxtf.org/compositing/#mix-blend-mode)
+- `css.properties.object-fit` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/object-fit) | [🔗spec](https://drafts.csswg.org/css-images/#the-object-fit)
+- `css.properties.object-position` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/object-position) | [🔗spec](https://drafts.csswg.org/css-images/#the-object-position)
+- `css.properties.order` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/order) | [🔗spec](https://drafts.csswg.org/css-display/#order-property)
+- `css.properties.outline-offset` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/outline-offset) | [🔗spec](https://drafts.csswg.org/css-ui/#outline-offset)
+- `css.properties.outline-style.auto`
+- `css.properties.overflow-x` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/overflow-x) | [🔗spec](https://drafts.csswg.org/css-overflow/#overflow-properties)
+- `css.properties.overflow-y` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/overflow-y) | [🔗spec](https://drafts.csswg.org/css-overflow/#overflow-properties)
+- `css.properties.padding-block-end` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/padding-block-end) | [🔗spec](https://drafts.csswg.org/css-logical/#padding-properties)
+- `css.properties.padding-block-start` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/padding-block-start) | [🔗spec](https://drafts.csswg.org/css-logical/#padding-properties)
+- `css.properties.padding-inline-end` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/padding-inline-end) | [🔗spec](https://drafts.csswg.org/css-logical/#padding-properties)
+- `css.properties.padding-inline-start` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/padding-inline-start) | [🔗spec](https://drafts.csswg.org/css-logical/#padding-properties)
+- `css.properties.paint-order` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/paint-order) | [🔗spec](https://svgwg.org/svg2-draft/painting.html#PaintOrder)
+- `css.properties.place-content` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/place-content) | [🔗spec](https://drafts.csswg.org/css-align/#place-content)
+- `css.properties.place-content.flex_context`
+- `css.properties.place-content.grid_context`
+- `css.properties.place-items` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/place-items) | [🔗spec](https://drafts.csswg.org/css-align/#place-items-property)
+- `css.properties.place-items.flex_context`
+- `css.properties.place-items.grid_context`
+- `css.properties.place-self` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/place-self) | [🔗spec](https://drafts.csswg.org/css-align/#place-self-property)
+- `css.properties.place-self.flex_context`
+- `css.properties.place-self.grid_context`
+- `css.properties.position.position_sticky_table_elements`
+- `css.properties.position.sticky`
+- `css.properties.resize` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/resize) | [🔗spec](https://drafts.csswg.org/css-ui/#resize)
+- `css.properties.resize.block_level_support`
+- `css.properties.row-gap.grid_context` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/row-gap) | [🔗spec](https://drafts.csswg.org/css-align/#column-row-gap)
+- `css.properties.ruby-position` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/ruby-position) | [🔗spec](https://drafts.csswg.org/css-ruby/#rubypos)
+- `css.properties.scroll-snap-align` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/scroll-snap-align) | [🔗spec](https://drafts.csswg.org/css-scroll-snap/#scroll-snap-align)
+- `css.properties.shape-image-threshold` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/shape-image-threshold) | [🔗spec](https://drafts.csswg.org/css-shapes/#shape-image-threshold-property)
+- `css.properties.shape-margin` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/shape-margin) | [🔗spec](https://drafts.csswg.org/css-shapes/#shape-margin-property)
+- `css.properties.shape-outside` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/shape-outside) | [🔗spec](https://drafts.csswg.org/css-shapes/#shape-outside-property)
+- `css.properties.shape-outside.circle` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/basic-shape#circle())
+- `css.properties.shape-outside.gradient` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/gradient) | [🔗spec](https://drafts.csswg.org/css-images/#gradients)
+- `css.properties.shape-outside.image` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/image) | [🔗spec](https://drafts.csswg.org/css-images/#image-values)
+- `css.properties.shape-outside.inset` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/basic-shape#inset())
+- `css.properties.shape-outside.polygon` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/basic-shape#polygon())
+- `css.properties.tab-size` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/tab-size) | [🔗spec](https://drafts.csswg.org/css-text/#tab-size-property)
+- `css.properties.text-align.flow_relative_values_start_and_end`
+- `css.properties.text-decoration-color` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/text-decoration-color) | [🔗spec](https://drafts.csswg.org/css-text-decor/#text-decoration-color-property)
+- `css.properties.text-decoration-line` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/text-decoration-line) | [🔗spec](https://drafts.csswg.org/css-text-decor/#text-decoration-line-property)
+- `css.properties.text-decoration-line.blink`
+- `css.properties.text-decoration-style` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/text-decoration-style) | [🔗spec](https://drafts.csswg.org/css-text-decor/#text-decoration-style-property)
+- `css.properties.text-decoration-style.wavy`
+- `css.properties.text-decoration-thickness` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/text-decoration-thickness) | [🔗spec](https://drafts.csswg.org/css-text-decor-4/#text-decoration-width-property)
+- `css.properties.text-decoration.shorthand`
+- `css.properties.text-emphasis-position.left_and_right`
+- `css.properties.text-orientation` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/text-orientation) | [🔗spec](https://drafts.csswg.org/css-writing-modes/#text-orientation)
+- `css.properties.text-overflow` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/text-overflow) | [🔗spec](https://drafts.csswg.org/css-overflow/#text-overflow)
+- `css.properties.text-rendering` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/text-rendering) | [🔗spec](https://svgwg.org/svg2-draft/painting.html#TextRenderingProperty)
+- `css.properties.text-rendering.auto`
+- `css.properties.text-rendering.geometricPrecision`
+- `css.properties.text-transform.uppercase_eszett`
+- `css.properties.text-underline-offset` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/text-underline-offset) | [🔗spec](https://drafts.csswg.org/css-text-decor-4/#underline-offset)
+- `css.properties.text-underline-position.under`
+- `css.properties.touch-action` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/touch-action) | [🔗spec](https://compat.spec.whatwg.org/#touch-action,https://w3c.github.io/pointerevents/#the-touch-action-css-property)
+- `css.properties.touch-action.axis-pan`
+- `css.properties.touch-action.manipulation`
+- `css.properties.touch-action.none`
+- `css.properties.touch-action.pinch-zoom`
+- `css.properties.transform` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/transform) | [🔗spec](https://drafts.csswg.org/css-transforms-2/#transform-functions,https://drafts.csswg.org/css-transforms/#transform-property)
+- `css.properties.transform-box` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/transform-box) | [🔗spec](https://drafts.csswg.org/css-transforms/#transform-box)
+- `css.properties.transform-origin` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/transform-origin) | [🔗spec](https://drafts.csswg.org/css-transforms/#transform-origin-property)
+- `css.properties.transform-origin.support_in_svg`
+- `css.properties.transform-style` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/transform-style) | [🔗spec](https://drafts.csswg.org/css-transforms-2/#transform-style-property)
+- `css.properties.transition` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/transition) | [🔗spec](https://drafts.csswg.org/css-transitions/#transition-shorthand-property)
+- `css.properties.transition-delay` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/transition-delay) | [🔗spec](https://drafts.csswg.org/css-transitions/#transition-delay-property)
+- `css.properties.transition-duration` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/transition-duration) | [🔗spec](https://drafts.csswg.org/css-transitions/#transition-duration-property)
+- `css.properties.transition-property` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/transition-property) | [🔗spec](https://drafts.csswg.org/css-transitions/#transition-property-property)
+- `css.properties.transition-timing-function` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/transition-timing-function) | [🔗spec](https://drafts.csswg.org/css-transitions/#transition-timing-function-property)
+- `css.properties.transition-timing-function.jump`
+- `css.properties.unicode-bidi.isolate`
+- `css.properties.unicode-bidi.isolate-override`
+- `css.properties.unicode-bidi.plaintext`
+- `css.properties.white-space.break-spaces`
+- `css.properties.width.max-content` | [🔗spec](https://drafts.csswg.org/css-sizing-3/#valdef-width-max-content)
+- `css.properties.width.min-content` | [🔗spec](https://drafts.csswg.org/css-sizing-3/#valdef-width-min-content)
+- `css.properties.width.stretch`
+- `css.properties.will-change` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/will-change) | [🔗spec](https://drafts.csswg.org/css-will-change/#will-change)
+- `css.properties.word-break` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/word-break) | [🔗spec](https://drafts.csswg.org/css-text/#word-break-property)
+- `css.properties.word-break.break-word`
+- `css.properties.writing-mode` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/writing-mode) | [🔗spec](https://drafts.csswg.org/css-writing-modes/#block-flow)
+- `css.properties.writing-mode.horizontal_vertical_values`
+- `css.selectors.after` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/::after) | [🔗spec](https://drafts.csswg.org/css-pseudo/#generated-content)
+- `css.selectors.any-link` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/:any-link) | [🔗spec](https://drafts.csswg.org/selectors/#the-any-link-pseudo)
+- `css.selectors.attribute.case_insensitive_modifier`
+- `css.selectors.before` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/::before) | [🔗spec](https://drafts.csswg.org/css-pseudo/#generated-content)
+- `css.selectors.cue` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/::cue) | [🔗spec](https://w3c.github.io/webvtt/#the-cue-pseudo-element)
+- `css.selectors.default` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/:default) | [🔗spec](https://html.spec.whatwg.org/multipage/semantics-other.html#selector-default,https://drafts.csswg.org/selectors/#default-pseudo)
+- `css.selectors.defined` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/:defined) | [🔗spec](https://html.spec.whatwg.org/multipage/semantics-other.html#selector-defined)
+- `css.selectors.first-letter` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/::first-letter) | [🔗spec](https://drafts.csswg.org/css-pseudo/#first-letter-pseudo)
+- `css.selectors.first-line` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/::first-line) | [🔗spec](https://drafts.csswg.org/css-pseudo/#first-line-pseudo)
+- `css.selectors.focus-within` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/:focus-within) | [🔗spec](https://drafts.csswg.org/selectors/#the-focus-within-pseudo)
+- `css.selectors.host` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/:host) | [🔗spec](https://drafts.csswg.org/css-scoping/#host-selector)
+- `css.selectors.hostfunction` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/:host()) | [🔗spec](https://drafts.csswg.org/css-scoping/#host-selector)
+- `css.selectors.in-range` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/:in-range) | [🔗spec](https://html.spec.whatwg.org/multipage/semantics-other.html#selector-in-range,https://drafts.csswg.org/selectors/#in-range-pseudo)
+- `css.selectors.invalid.form`
+- `css.selectors.is` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/:is) | [🔗spec](https://drafts.csswg.org/selectors/#matches-pseudo)
+- `css.selectors.is.forgiving_selector_list` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/:is#Forgiving_Selector_Parsing)
+- `css.selectors.marker` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/::marker) | [🔗spec](https://drafts.csswg.org/css-pseudo/#marker-pseudo)
+- `css.selectors.not.selector_list`
+- `css.selectors.out-of-range` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/:out-of-range) | [🔗spec](https://html.spec.whatwg.org/multipage/semantics-other.html#selector-out-of-range,https://drafts.csswg.org/selectors/#out-of-range-pseudo)
+- `css.selectors.part` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/::part) | [🔗spec](https://drafts.csswg.org/css-shadow-parts/#part)
+- `css.selectors.placeholder` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/::placeholder) | [🔗spec](https://drafts.csswg.org/css-pseudo/#placeholder-pseudo)
+- `css.selectors.placeholder-shown.non_text_types`
+- `css.selectors.read-only` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/:read-only) | [🔗spec](https://html.spec.whatwg.org/multipage/semantics-other.html#selector-read-only,https://drafts.csswg.org/selectors/#rw-pseudos)
+- `css.selectors.read-write` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/:read-write) | [🔗spec](https://html.spec.whatwg.org/multipage/semantics-other.html#selector-read-write,https://drafts.csswg.org/selectors/#rw-pseudos)
+- `css.selectors.scope` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/:scope) | [🔗spec](https://drafts.csswg.org/selectors/#the-scope-pseudo)
+- `css.selectors.scope.dom_api`
+- `css.selectors.slotted` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/::slotted) | [🔗spec](https://drafts.csswg.org/css-scoping/#slotted-pseudo)
+- `css.selectors.valid.form`
+- `css.selectors.where` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/:where) | [🔗spec](https://drafts.csswg.org/selectors/#zero-matches)
+- `css.selectors.where.forgiving_selector_list` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/:where#Forgiving_Selector_Parsing)
+- `css.types.basic-shape` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/basic-shape) | [🔗spec](https://drafts.csswg.org/css-shapes/#basic-shape-functions)
+- `css.types.basic-shape.animation` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/basic-shape#Interpolation_of_basic_shapes)
+- `css.types.basic-shape.circle` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/basic-shape/circle) | [🔗spec](https://drafts.csswg.org/css-shapes/#funcdef-basic-shape-circle)
+- `css.types.basic-shape.ellipse` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/basic-shape/ellipse) | [🔗spec](https://drafts.csswg.org/css-shapes/#funcdef-basic-shape-ellipse)
+- `css.types.basic-shape.inset` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/basic-shape/inset) | [🔗spec](https://drafts.csswg.org/css-shapes/#funcdef-basic-shape-inset)
+- `css.types.basic-shape.polygon` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/basic-shape/polygon) | [🔗spec](https://drafts.csswg.org/css-shapes/#funcdef-basic-shape-polygon)
+- `css.types.blend-mode` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/blend-mode) | [🔗spec](https://drafts.fxtf.org/compositing/#ltblendmodegt)
+- `css.types.calc.nested`
+- `css.types.clamp` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/clamp) | [🔗spec](https://drafts.csswg.org/css-values/#calc-notation)
+- `css.types.color.hsl.alpha_parameter`
+- `css.types.color.hsl.space_separated_parameters`
+- `css.types.color.hsla.space_separated_parameters`
+- `css.types.color.rgb.alpha_parameter`
+- `css.types.color.rgb.float_values`
+- `css.types.color.rgb.space_separated_parameters`
+- `css.types.color.rgb_hexadecimal_notation.alpha_hexadecimal_notation`
+- `css.types.color.rgba.float_values`
+- `css.types.color.rgba.space_separated_parameters`
+- `css.types.easing-function.steps.jump`
+- `css.types.filter-function` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/filter-function) | [🔗spec](https://drafts.fxtf.org/filter-effects/#typedef-filter-function)
+- `css.types.filter-function.blur` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/filter-function/blur) | [🔗spec](https://drafts.fxtf.org/filter-effects/#funcdef-filter-blur)
+- `css.types.filter-function.brightness` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/filter-function/brightness) | [🔗spec](https://drafts.fxtf.org/filter-effects/#funcdef-filter-brightness)
+- `css.types.filter-function.contrast` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/filter-function/contrast) | [🔗spec](https://drafts.fxtf.org/filter-effects/#funcdef-filter-contrast)
+- `css.types.filter-function.drop-shadow` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/filter-function/drop-shadow) | [🔗spec](https://drafts.fxtf.org/filter-effects/#funcdef-filter-drop-shadow)
+- `css.types.filter-function.grayscale` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/filter-function/grayscale) | [🔗spec](https://drafts.fxtf.org/filter-effects/#funcdef-filter-grayscale)
+- `css.types.filter-function.hue-rotate` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/filter-function/hue-rotate) | [🔗spec](https://drafts.fxtf.org/filter-effects/#funcdef-filter-hue-rotate)
+- `css.types.filter-function.invert` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/filter-function/invert) | [🔗spec](https://drafts.fxtf.org/filter-effects/#funcdef-filter-invert)
+- `css.types.filter-function.opacity` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/filter-function/opacity) | [🔗spec](https://drafts.fxtf.org/filter-effects/#funcdef-filter-opacity)
+- `css.types.filter-function.saturate` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/filter-function/saturate) | [🔗spec](https://drafts.fxtf.org/filter-effects/#funcdef-filter-saturate)
+- `css.types.filter-function.sepia` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/filter-function/sepia) | [🔗spec](https://drafts.fxtf.org/filter-effects/#funcdef-filter-sepia)
+- `css.types.global_keywords.initial` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/initial) | [🔗spec](https://drafts.csswg.org/css-cascade/#initial)
+- `css.types.global_keywords.revert` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/revert) | [🔗spec](https://drafts.csswg.org/css-cascade/#default)
+- `css.types.global_keywords.unset` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/unset) | [🔗spec](https://drafts.csswg.org/css-cascade/#inherit-initial)
+- `css.types.image.gradient.conic-gradient` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/gradient/conic-gradient) | [🔗spec](https://drafts.csswg.org/css-images-4/#conic-gradients)
+- `css.types.image.gradient.conic-gradient.doubleposition`
+- `css.types.image.gradient.linear-gradient.doubleposition`
+- `css.types.image.gradient.linear-gradient.interpolation_hints`
+- `css.types.image.gradient.linear-gradient.unitless_0_angle`
+- `css.types.image.gradient.radial-gradient.doubleposition`
+- `css.types.image.gradient.radial-gradient.interpolation_hints`
+- `css.types.image.gradient.repeating-conic-gradient` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/gradient/repeating-conic-gradient) | [🔗spec](https://drafts.csswg.org/css-images-4/#repeating-gradients)
+- `css.types.image.gradient.repeating-linear-gradient.doubleposition`
+- `css.types.image.gradient.repeating-linear-gradient.interpolation_hints`
+- `css.types.image.gradient.repeating-linear-gradient.unitless_0_angle`
+- `css.types.image.gradient.repeating-radial-gradient.doubleposition`
+- `css.types.image.gradient.repeating-radial-gradient.interpolation_hints`
+- `css.types.image.image-set` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/image/image-set) | [🔗spec](https://drafts.csswg.org/css-images-4/#image-set-notation)
+- `css.types.length-percentage.vmax`
+- `css.types.length-percentage.vmin`
+- `css.types.length.vmax`
+- `css.types.length.vmin`
+- `css.types.max` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/max) | [🔗spec](https://drafts.csswg.org/css-values/#calc-notation)
+- `css.types.min` | [🔗mdn](https://developer.mozilla.org/docs/Web/CSS/min) | [🔗spec](https://drafts.csswg.org/css-values/#calc-notation)
+- `html.elements.a.download`
+- `html.elements.a.implicit_noopener`
+- `html.elements.a.ping`
+- `html.elements.a.referrerpolicy`
+- `html.elements.a.rel.noopener` | [🔗mdn](https://developer.mozilla.org/docs/Web/HTML/Link_types/noopener) | [🔗spec](https://html.spec.whatwg.org/multipage/links.html#link-type-noopener)
+- `html.elements.area.implicit_noopener`
+- `html.elements.area.ping`
+- `html.elements.area.referrerpolicy`
+- `html.elements.area.rel.noopener` | [🔗mdn](https://developer.mozilla.org/docs/Web/HTML/Link_types/noopener) | [🔗spec](https://html.spec.whatwg.org/multipage/links.html#link-type-noopener)
+- `html.elements.bdi` | [🔗mdn](https://developer.mozilla.org/docs/Web/HTML/Element/bdi) | [🔗spec](https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-bdi-element)
+- `html.elements.button.form`
+- `html.elements.details` | [🔗mdn](https://developer.mozilla.org/docs/Web/HTML/Element/details) | [🔗spec](https://html.spec.whatwg.org/multipage/interactive-elements.html#the-details-element)
+- `html.elements.details.open`
+- `html.elements.embed.aspect_ratio_computed_from_attributes`
+- `html.elements.iframe.allow` | [🔗spec](https://html.spec.whatwg.org/multipage/iframe-embed-object.html#attr-iframe-allow)
+- `html.elements.iframe.aspect_ratio_computed_from_attributes`
+- `html.elements.iframe.referrerpolicy` | [🔗spec](https://html.spec.whatwg.org/multipage/iframe-embed-object.html#attr-iframe-referrerpolicy)
+- `html.elements.iframe.sandbox-allow-top-navigation-by-user-activation`
+- `html.elements.iframe.srcdoc` | [🔗spec](https://html.spec.whatwg.org/multipage/iframe-embed-object.html#attr-iframe-srcdoc)
+- `html.elements.img.referrerpolicy`
+- `html.elements.img.usemap.caseless_usemap`
+- `html.elements.input.attributes.minlength` | [🔗mdn](https://developer.mozilla.org/docs/Web/HTML/Attributes/minlength) | [🔗spec](https://html.spec.whatwg.org/multipage/input.html#the-maxlength-and-minlength-attributes)
+- `html.elements.input.type_color` | [🔗mdn](https://developer.mozilla.org/docs/Web/HTML/Element/input/color) | [🔗spec](https://html.spec.whatwg.org/multipage/input.html#color-state-(type=color))
+- `html.elements.link.integrity` | [🔗mdn](https://developer.mozilla.org/docs/Web/Security/Subresource_Integrity) | [🔗spec](https://html.spec.whatwg.org/multipage/semantics.html#attr-link-integrity,https://w3c.github.io/webappsec-subresource-integrity/#the-integrity-attribute)
+- `html.elements.link.referrerpolicy`
+- `html.elements.link.rel.preconnect` | [🔗mdn](https://developer.mozilla.org/docs/Web/HTML/Link_types/preconnect) | [🔗spec](https://html.spec.whatwg.org/multipage/links.html#link-type-preconnect)
+- `html.elements.main` | [🔗mdn](https://developer.mozilla.org/docs/Web/HTML/Element/main) | [🔗spec](https://html.spec.whatwg.org/multipage/grouping-content.html#the-main-element)
+- `html.elements.object.aspect_ratio_computed_from_attributes`
+- `html.elements.picture` | [🔗mdn](https://developer.mozilla.org/docs/Web/HTML/Element/picture) | [🔗spec](https://html.spec.whatwg.org/multipage/embedded-content.html#the-picture-element)
+- `html.elements.script.integrity` | [🔗spec](https://html.spec.whatwg.org/multipage/semantics.html#attr-script-integrity,https://w3c.github.io/webappsec-subresource-integrity/#the-integrity-attribute)
+- `html.elements.script.nomodule`
+- `html.elements.script.type.module`
+- `html.elements.slot` | [🔗mdn](https://developer.mozilla.org/docs/Web/HTML/Element/slot) | [🔗spec](https://html.spec.whatwg.org/multipage/scripting.html#the-slot-element,https://dom.spec.whatwg.org/#shadow-tree-slots)
+- `html.elements.slot.name`
+- `html.elements.summary` | [🔗mdn](https://developer.mozilla.org/docs/Web/HTML/Element/summary) | [🔗spec](https://html.spec.whatwg.org/multipage/interactive-elements.html#the-summary-element)
+- `html.elements.template` | [🔗mdn](https://developer.mozilla.org/docs/Web/HTML/Element/template) | [🔗spec](https://html.spec.whatwg.org/multipage/scripting.html#the-template-element)
+- `html.elements.textarea.minlength` | [🔗mdn](https://developer.mozilla.org/docs/Web/HTML/Attributes/minlength) | [🔗spec](https://html.spec.whatwg.org/multipage/input.html#the-maxlength-and-minlength-attributes)
+- `html.elements.video.aspect_ratio_computed_from_attributes`
+- `html.global_attributes.dir` | [🔗mdn](https://developer.mozilla.org/docs/Web/HTML/Global_attributes/dir) | [🔗spec](https://html.spec.whatwg.org/multipage/dom.html#the-dir-attribute)
+- `html.global_attributes.exportparts` | [🔗mdn](https://developer.mozilla.org/docs/Web/HTML/Global_attributes/exportparts) | [🔗spec](https://drafts.csswg.org/css-shadow-parts/#element-attrdef-html-global-exportparts)
+- `html.global_attributes.nonce` | [🔗mdn](https://developer.mozilla.org/docs/Web/HTML/Global_attributes/nonce) | [🔗spec](https://html.spec.whatwg.org/multipage/urls-and-fetching.html#attr-nonce)
+- `html.global_attributes.part` | [🔗mdn](https://developer.mozilla.org/docs/Web/HTML/Global_attributes/part) | [🔗spec](https://drafts.csswg.org/css-shadow-parts/#part-attr)
+- `javascript.builtins.AggregateError` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/AggregateError) | [🔗spec](https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-aggregate-error-objects)
+- `javascript.builtins.AggregateError.AggregateError` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/AggregateError/AggregateError) | [🔗spec](https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-aggregate-error-constructor)
+- `javascript.builtins.Array.@@iterator` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array/@@iterator) | [🔗spec](https://tc39.es/ecma262/multipage/indexed-collections.html#sec-array.prototype-@@iterator)
+- `javascript.builtins.Array.@@species` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array/@@species) | [🔗spec](https://tc39.es/ecma262/multipage/indexed-collections.html#sec-get-array-@@species)
+- `javascript.builtins.Array.@@unscopables` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array/@@unscopables) | [🔗spec](https://tc39.es/ecma262/multipage/indexed-collections.html#sec-array.prototype-@@unscopables)
+- `javascript.builtins.Array.copyWithin` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array/copyWithin) | [🔗spec](https://tc39.es/ecma262/multipage/indexed-collections.html#sec-array.prototype.copywithin)
+- `javascript.builtins.Array.entries` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array/entries) | [🔗spec](https://tc39.es/ecma262/multipage/indexed-collections.html#sec-array.prototype.entries)
+- `javascript.builtins.Array.fill` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array/fill) | [🔗spec](https://tc39.es/ecma262/multipage/indexed-collections.html#sec-array.prototype.fill)
+- `javascript.builtins.Array.find` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array/find) | [🔗spec](https://tc39.es/ecma262/multipage/indexed-collections.html#sec-array.prototype.find)
+- `javascript.builtins.Array.findIndex` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array/findIndex) | [🔗spec](https://tc39.es/ecma262/multipage/indexed-collections.html#sec-array.prototype.findindex)
+- `javascript.builtins.Array.flat` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array/flat) | [🔗spec](https://tc39.es/ecma262/multipage/indexed-collections.html#sec-array.prototype.flat)
+- `javascript.builtins.Array.flatMap` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array/flatMap) | [🔗spec](https://tc39.es/ecma262/multipage/indexed-collections.html#sec-array.prototype.flatmap)
+- `javascript.builtins.Array.from` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array/from) | [🔗spec](https://tc39.es/ecma262/multipage/indexed-collections.html#sec-array.from)
+- `javascript.builtins.Array.includes` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array/includes) | [🔗spec](https://tc39.es/ecma262/multipage/indexed-collections.html#sec-array.prototype.includes)
+- `javascript.builtins.Array.keys` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array/keys) | [🔗spec](https://tc39.es/ecma262/multipage/indexed-collections.html#sec-array.prototype.keys)
+- `javascript.builtins.Array.of` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array/of) | [🔗spec](https://tc39.es/ecma262/multipage/indexed-collections.html#sec-array.of)
+- `javascript.builtins.Array.sort.stable`
+- `javascript.builtins.Array.values` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array/values) | [🔗spec](https://tc39.es/ecma262/multipage/indexed-collections.html#sec-array.prototype.values)
+- `javascript.builtins.ArrayBuffer.@@species` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer/@@species) | [🔗spec](https://tc39.es/ecma262/multipage/structured-data.html#sec-get-arraybuffer-@@species)
+- `javascript.builtins.ArrayBuffer.ArrayBuffer.new_required`
+- `javascript.builtins.AsyncFunction` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/AsyncFunction) | [🔗spec](https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-async-function-objects)
+- `javascript.builtins.AsyncGenerator` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/AsyncGenerator) | [🔗spec](https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-asyncgenerator-objects)
+- `javascript.builtins.AsyncGenerator.next` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/AsyncGenerator/next) | [🔗spec](https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-asyncgenerator-prototype-next)
+- `javascript.builtins.AsyncGenerator.return` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/AsyncGenerator/return) | [🔗spec](https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-asyncgenerator-prototype-return)
+- `javascript.builtins.AsyncGenerator.throw` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/AsyncGenerator/throw) | [🔗spec](https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-asyncgenerator-prototype-throw)
+- `javascript.builtins.AsyncGeneratorFunction` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/AsyncGeneratorFunction) | [🔗spec](https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-asyncgeneratorfunction-objects)
+- `javascript.builtins.AsyncIterator` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/AsyncIterator)
+- `javascript.builtins.AsyncIterator.@@asyncIterator` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/AsyncIterator/@@asyncIterator)
+- `javascript.builtins.BigInt` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/BigInt) | [🔗spec](https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-bigint-objects)
+- `javascript.builtins.BigInt.BigInt` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/BigInt/BigInt) | [🔗spec](https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-bigint-constructor)
+- `javascript.builtins.BigInt.asIntN` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/BigInt/asIntN) | [🔗spec](https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-bigint.asintn)
+- `javascript.builtins.BigInt.asUintN` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/BigInt/asUintN) | [🔗spec](https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-bigint.asuintn)
+- `javascript.builtins.DataView.DataView.new_required`
+- `javascript.builtins.DataView.buffer.sharedarraybuffer_support`
+- `javascript.builtins.Date.@@toPrimitive` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Date/@@toPrimitive) | [🔗spec](https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-date.prototype-@@toprimitive)
+- `javascript.builtins.Date.toLocaleDateString.iana_time_zone_names`
+- `javascript.builtins.Date.toLocaleTimeString.iana_time_zone_names`
+- `javascript.builtins.Float32Array.Float32Array.iterable_allowed`
+- `javascript.builtins.Float32Array.Float32Array.new_required`
+- `javascript.builtins.Float64Array.Float64Array.iterable_allowed`
+- `javascript.builtins.Float64Array.Float64Array.new_required`
+- `javascript.builtins.Function.length.configurable_true`
+- `javascript.builtins.Function.name` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Function/name) | [🔗spec](https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-function-instances-name)
+- `javascript.builtins.Function.name.configurable_true`
+- `javascript.builtins.Function.name.inferred_names`
+- `javascript.builtins.Generator` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Generator) | [🔗spec](https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-generator-objects)
+- `javascript.builtins.Generator.next` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Generator/next) | [🔗spec](https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-generator.prototype.next)
+- `javascript.builtins.Generator.return` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Generator/return) | [🔗spec](https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-generator.prototype.return)
+- `javascript.builtins.Generator.throw` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Generator/throw) | [🔗spec](https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-generator.prototype.throw)
+- `javascript.builtins.GeneratorFunction` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/GeneratorFunction) | [🔗spec](https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-generatorfunction-objects)
+- `javascript.builtins.Int16Array.Int16Array.iterable_allowed`
+- `javascript.builtins.Int16Array.Int16Array.new_required`
+- `javascript.builtins.Int32Array.Int32Array.iterable_allowed`
+- `javascript.builtins.Int32Array.Int32Array.new_required`
+- `javascript.builtins.Int8Array.Int8Array.iterable_allowed`
+- `javascript.builtins.Int8Array.Int8Array.new_required`
+- `javascript.builtins.Intl.@@toStringTag` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Intl/@@toStringTag) | [🔗spec](https://tc39.es/ecma402/#sec-Intl-toStringTag)
+- `javascript.builtins.Intl.Collator.Collator.options_caseFirst_parameter`
+- `javascript.builtins.Intl.DateTimeFormat.DateTimeFormat.options_parameter.options_hourCycle_parameter`
+- `javascript.builtins.Intl.DateTimeFormat.DateTimeFormat.options_parameter.options_timeZoneName_parameter`
+- `javascript.builtins.Intl.DateTimeFormat.DateTimeFormat.options_parameter.options_timeZone_parameter`
+- `javascript.builtins.Intl.DateTimeFormat.DateTimeFormat.options_parameter.options_timeZone_parameter.options_timeZone_parameter_iana`
+- `javascript.builtins.Intl.DateTimeFormat.formatToParts` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Intl/DateTimeFormat/formatToParts) | [🔗spec](https://tc39.es/ecma402/#sec-Intl.DateTimeFormat.prototype.formatToParts)
+- `javascript.builtins.Intl.DateTimeFormat.resolvedOptions.computed_timezone`
+- `javascript.builtins.Intl.Locale` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Intl/Locale) | [🔗spec](https://tc39.es/ecma402/#locale-objects)
+- `javascript.builtins.Intl.Locale.Locale` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Intl/Locale/Locale) | [🔗spec](https://tc39.es/ecma402/#sec-intl-locale-constructor)
+- `javascript.builtins.Intl.Locale.baseName` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Intl/Locale/baseName) | [🔗spec](https://tc39.es/ecma402/#sec-Intl.Locale.prototype.baseName)
+- `javascript.builtins.Intl.Locale.calendar` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Intl/Locale/calendar) | [🔗spec](https://tc39.es/ecma402/#sec-Intl.Locale.prototype.calendar)
+- `javascript.builtins.Intl.Locale.caseFirst` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Intl/Locale/caseFirst) | [🔗spec](https://tc39.es/ecma402/#sec-Intl.Locale.prototype.caseFirst)
+- `javascript.builtins.Intl.Locale.collation` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Intl/Locale/collation) | [🔗spec](https://tc39.es/ecma402/#sec-Intl.Locale.prototype.collation)
+- `javascript.builtins.Intl.Locale.hourCycle` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Intl/Locale/hourCycle) | [🔗spec](https://tc39.es/ecma402/#sec-Intl.Locale.prototype.hourCycle)
+- `javascript.builtins.Intl.Locale.language` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Intl/Locale/language) | [🔗spec](https://tc39.es/ecma402/#sec-Intl.Locale.prototype.language)
+- `javascript.builtins.Intl.Locale.maximize` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Intl/Locale/maximize) | [🔗spec](https://tc39.es/ecma402/#sec-Intl.Locale.prototype.maximize)
+- `javascript.builtins.Intl.Locale.minimize` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Intl/Locale/minimize) | [🔗spec](https://tc39.es/ecma402/#sec-Intl.Locale.prototype.minimize)
+- `javascript.builtins.Intl.Locale.numberingSystem` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Intl/Locale/numberingSystem) | [🔗spec](https://tc39.es/ecma402/#sec-Intl.Locale.prototype.numberingSystem)
+- `javascript.builtins.Intl.Locale.numeric` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Intl/Locale/numeric) | [🔗spec](https://tc39.es/ecma402/#sec-Intl.Locale.prototype.numeric)
+- `javascript.builtins.Intl.Locale.region` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Intl/Locale/region) | [🔗spec](https://tc39.es/ecma402/#sec-Intl.Locale.prototype.region)
+- `javascript.builtins.Intl.Locale.script` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Intl/Locale/script) | [🔗spec](https://tc39.es/ecma402/#sec-Intl.Locale.prototype.script)
+- `javascript.builtins.Intl.NumberFormat.formatToParts` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Intl/NumberFormat/formatToParts) | [🔗spec](https://tc39.es/ecma402/#sec-intl.numberformat.prototype.formattoparts)
+- `javascript.builtins.Intl.PluralRules` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Intl/PluralRules) | [🔗spec](https://tc39.es/ecma402/#pluralrules-objects)
+- `javascript.builtins.Intl.PluralRules.PluralRules` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Intl/PluralRules/PluralRules) | [🔗spec](https://tc39.es/ecma402/#sec-intl-pluralrules-constructor)
+- `javascript.builtins.Intl.PluralRules.resolvedOptions` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Intl/PluralRules/resolvedOptions) | [🔗spec](https://tc39.es/ecma402/#sec-intl.pluralrules.prototype.resolvedoptions)
+- `javascript.builtins.Intl.PluralRules.select` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Intl/PluralRules/select) | [🔗spec](https://tc39.es/ecma402/#sec-intl.pluralrules.prototype.select)
+- `javascript.builtins.Intl.PluralRules.supportedLocalesOf` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Intl/PluralRules/supportedLocalesOf) | [🔗spec](https://tc39.es/ecma402/#sec-intl.pluralrules.supportedlocalesof)
+- `javascript.builtins.Intl.RelativeTimeFormat` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Intl/RelativeTimeFormat) | [🔗spec](https://tc39.es/ecma402/#relativetimeformat-objects)
+- `javascript.builtins.Intl.RelativeTimeFormat.RelativeTimeFormat` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Intl/RelativeTimeFormat/RelativeTimeFormat) | [🔗spec](https://tc39.es/ecma402/#sec-intl-relativetimeformat-constructor)
+- `javascript.builtins.Intl.RelativeTimeFormat.format` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Intl/RelativeTimeFormat/format) | [🔗spec](https://tc39.es/ecma402/#sec-Intl.RelativeTimeFormat.prototype.format)
+- `javascript.builtins.Intl.RelativeTimeFormat.formatToParts` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Intl/RelativeTimeFormat/formatToParts) | [🔗spec](https://tc39.es/ecma402/#sec-Intl.RelativeTimeFormat.prototype.formatToParts)
+- `javascript.builtins.Intl.RelativeTimeFormat.resolvedOptions` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Intl/RelativeTimeFormat/resolvedOptions) | [🔗spec](https://tc39.es/ecma402/#sec-intl.relativetimeformat.prototype.resolvedoptions)
+- `javascript.builtins.Intl.RelativeTimeFormat.resolvedOptions.numberingSystem`
+- `javascript.builtins.Intl.RelativeTimeFormat.supportedLocalesOf` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Intl/RelativeTimeFormat/supportedLocalesOf) | [🔗spec](https://tc39.es/ecma402/#sec-Intl.RelativeTimeFormat.supportedLocalesOf)
+- `javascript.builtins.Intl.getCanonicalLocales` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Intl/getCanonicalLocales) | [🔗spec](https://tc39.es/ecma402/#sec-intl.getcanonicallocales)
+- `javascript.builtins.Iterator` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Iterator)
+- `javascript.builtins.Iterator.@@iterator` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Iterator/@@iterator)
+- `javascript.builtins.JSON.json_superset` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/JSON#JavaScript_and_JSON_differences)
+- `javascript.builtins.JSON.stringify.well_formed_stringify`
+- `javascript.builtins.Map.@@iterator` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Map/@@iterator) | [🔗spec](https://tc39.es/ecma262/multipage/keyed-collections.html#sec-map.prototype-@@iterator)
+- `javascript.builtins.Map.@@species` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Map/@@species) | [🔗spec](https://tc39.es/ecma262/multipage/keyed-collections.html#sec-get-map-@@species)
+- `javascript.builtins.Map.@@toStringTag` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Map/@@toStringTag) | [🔗spec](https://tc39.es/ecma262/multipage/keyed-collections.html#sec-map.prototype-@@tostringtag)
+- `javascript.builtins.Map.Map.iterable_allowed`
+- `javascript.builtins.Map.entries` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Map/entries) | [🔗spec](https://tc39.es/ecma262/multipage/keyed-collections.html#sec-map.prototype.entries)
+- `javascript.builtins.Map.key_equality_for_zeros`
+- `javascript.builtins.Map.keys` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Map/keys) | [🔗spec](https://tc39.es/ecma262/multipage/keyed-collections.html#sec-map.prototype.keys)
+- `javascript.builtins.Map.values` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Map/values) | [🔗spec](https://tc39.es/ecma262/multipage/keyed-collections.html#sec-map.prototype.values)
+- `javascript.builtins.Math.acosh` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Math/acosh) | [🔗spec](https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-math.acosh)
+- `javascript.builtins.Math.asinh` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Math/asinh) | [🔗spec](https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-math.asinh)
+- `javascript.builtins.Math.atanh` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Math/atanh) | [🔗spec](https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-math.atanh)
+- `javascript.builtins.Math.cbrt` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Math/cbrt) | [🔗spec](https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-math.cbrt)
+- `javascript.builtins.Math.clz32` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Math/clz32) | [🔗spec](https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-math.clz32)
+- `javascript.builtins.Math.cosh` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Math/cosh) | [🔗spec](https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-math.cosh)
+- `javascript.builtins.Math.expm1` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Math/expm1) | [🔗spec](https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-math.expm1)
+- `javascript.builtins.Math.fround` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Math/fround) | [🔗spec](https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-math.fround)
+- `javascript.builtins.Math.hypot` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Math/hypot) | [🔗spec](https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-math.hypot)
+- `javascript.builtins.Math.imul` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Math/imul) | [🔗spec](https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-math.imul)
+- `javascript.builtins.Math.log10` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Math/log10) | [🔗spec](https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-math.log10)
+- `javascript.builtins.Math.log1p` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Math/log1p) | [🔗spec](https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-math.log1p)
+- `javascript.builtins.Math.log2` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Math/log2) | [🔗spec](https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-math.log2)
+- `javascript.builtins.Math.sign` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Math/sign) | [🔗spec](https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-math.sign)
+- `javascript.builtins.Math.sinh` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Math/sinh) | [🔗spec](https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-math.sinh)
+- `javascript.builtins.Math.tanh` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Math/tanh) | [🔗spec](https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-math.tanh)
+- `javascript.builtins.Math.trunc` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Math/trunc) | [🔗spec](https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-math.trunc)
+- `javascript.builtins.Number.EPSILON` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number/EPSILON) | [🔗spec](https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-number.epsilon)
+- `javascript.builtins.Number.MAX_SAFE_INTEGER` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number/MAX_SAFE_INTEGER) | [🔗spec](https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-number.max_safe_integer)
+- `javascript.builtins.Number.MIN_SAFE_INTEGER` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number/MIN_SAFE_INTEGER) | [🔗spec](https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-number.min_safe_integer)
+- `javascript.builtins.Number.isFinite` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number/isFinite) | [🔗spec](https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-number.isfinite)
+- `javascript.builtins.Number.isInteger` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number/isInteger) | [🔗spec](https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-number.isinteger)
+- `javascript.builtins.Number.isNaN` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number/isNaN) | [🔗spec](https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-number.isnan)
+- `javascript.builtins.Number.isSafeInteger` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number/isSafeInteger) | [🔗spec](https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-number.issafeinteger)
+- `javascript.builtins.Number.parseFloat` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number/parseFloat) | [🔗spec](https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-number.parsefloat)
+- `javascript.builtins.Number.parseInt` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number/parseInt) | [🔗spec](https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-number.parseint)
+- `javascript.builtins.Object.assign` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object/assign) | [🔗spec](https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object.assign)
+- `javascript.builtins.Object.defineProperty` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object/defineProperty) | [🔗spec](https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object.defineproperty)
+- `javascript.builtins.Object.entries` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object/entries) | [🔗spec](https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object.entries)
+- `javascript.builtins.Object.fromEntries` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object/fromEntries) | [🔗spec](https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object.fromentries)
+- `javascript.builtins.Object.getOwnPropertyDescriptor` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object/getOwnPropertyDescriptor) | [🔗spec](https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object.getownpropertydescriptor)
+- `javascript.builtins.Object.getOwnPropertyDescriptors` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object/getOwnPropertyDescriptors) | [🔗spec](https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object.getownpropertydescriptors)
+- `javascript.builtins.Object.getOwnPropertySymbols` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object/getOwnPropertySymbols) | [🔗spec](https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object.getownpropertysymbols)
+- `javascript.builtins.Object.is` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object/is) | [🔗spec](https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object.is)
+- `javascript.builtins.Object.values` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object/values) | [🔗spec](https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object.values)
+- `javascript.builtins.Promise` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise) | [🔗spec](https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-promise-objects)
+- `javascript.builtins.Promise.Promise` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise/Promise) | [🔗spec](https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-promise-constructor)
+- `javascript.builtins.Promise.all` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise/all) | [🔗spec](https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-promise.all)
+- `javascript.builtins.Promise.allSettled` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise/allSettled) | [🔗spec](https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-promise.allsettled)
+- `javascript.builtins.Promise.any` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise/any) | [🔗spec](https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-promise.any)
+- `javascript.builtins.Promise.catch` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise/catch) | [🔗spec](https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-promise.prototype.catch)
+- `javascript.builtins.Promise.finally` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise/finally) | [🔗spec](https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-promise.prototype.finally)
+- `javascript.builtins.Promise.race` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise/race) | [🔗spec](https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-promise.race)
+- `javascript.builtins.Promise.reject` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise/reject) | [🔗spec](https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-promise.reject)
+- `javascript.builtins.Promise.resolve` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise/resolve) | [🔗spec](https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-promise.resolve)
+- `javascript.builtins.Promise.then` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise/then) | [🔗spec](https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-promise.prototype.then)
+- `javascript.builtins.Proxy` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Proxy) | [🔗spec](https://tc39.es/ecma262/multipage/reflection.html#sec-proxy-objects)
+- `javascript.builtins.Proxy.Proxy` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Proxy/Proxy) | [🔗spec](https://tc39.es/ecma262/multipage/reflection.html#sec-proxy-constructor)
+- `javascript.builtins.Proxy.handler.apply` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Proxy/Proxy/apply) | [🔗spec](https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-proxy-object-internal-methods-and-internal-slots-call-thisargument-argumentslist)
+- `javascript.builtins.Proxy.handler.construct` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Proxy/Proxy/construct) | [🔗spec](https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-proxy-object-internal-methods-and-internal-slots-construct-argumentslist-newtarget)
+- `javascript.builtins.Proxy.handler.defineProperty` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Proxy/Proxy/defineProperty) | [🔗spec](https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-proxy-object-internal-methods-and-internal-slots-defineownproperty-p-desc)
+- `javascript.builtins.Proxy.handler.deleteProperty` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Proxy/Proxy/deleteProperty) | [🔗spec](https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-proxy-object-internal-methods-and-internal-slots-delete-p)
+- `javascript.builtins.Proxy.handler.get` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Proxy/Proxy/get) | [🔗spec](https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-proxy-object-internal-methods-and-internal-slots-get-p-receiver)
+- `javascript.builtins.Proxy.handler.getOwnPropertyDescriptor` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Proxy/Proxy/getOwnPropertyDescriptor) | [🔗spec](https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-proxy-object-internal-methods-and-internal-slots-getownproperty-p)
+- `javascript.builtins.Proxy.handler.getPrototypeOf` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Proxy/Proxy/getPrototypeOf) | [🔗spec](https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-proxy-object-internal-methods-and-internal-slots-getprototypeof)
+- `javascript.builtins.Proxy.handler.has` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Proxy/Proxy/has) | [🔗spec](https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-proxy-object-internal-methods-and-internal-slots-hasproperty-p)
+- `javascript.builtins.Proxy.handler.isExtensible` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Proxy/Proxy/isExtensible) | [🔗spec](https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-proxy-object-internal-methods-and-internal-slots-isextensible)
+- `javascript.builtins.Proxy.handler.ownKeys` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Proxy/Proxy/ownKeys) | [🔗spec](https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-proxy-object-internal-methods-and-internal-slots-ownpropertykeys)
+- `javascript.builtins.Proxy.handler.preventExtensions` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Proxy/Proxy/preventExtensions) | [🔗spec](https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-proxy-object-internal-methods-and-internal-slots-preventextensions)
+- `javascript.builtins.Proxy.handler.set` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Proxy/Proxy/set) | [🔗spec](https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-proxy-object-internal-methods-and-internal-slots-set-p-v-receiver)
+- `javascript.builtins.Proxy.handler.setPrototypeOf` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Proxy/Proxy/setPrototypeOf) | [🔗spec](https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-proxy-object-internal-methods-and-internal-slots-setprototypeof-v)
+- `javascript.builtins.Proxy.revocable` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Proxy/revocable) | [🔗spec](https://tc39.es/ecma262/multipage/reflection.html#sec-proxy.revocable)
+- `javascript.builtins.Reflect` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Reflect) | [🔗spec](https://tc39.es/ecma262/multipage/reflection.html#sec-reflect-object)
+- `javascript.builtins.Reflect.apply` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Reflect/apply) | [🔗spec](https://tc39.es/ecma262/multipage/reflection.html#sec-reflect.apply)
+- `javascript.builtins.Reflect.construct` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Reflect/construct) | [🔗spec](https://tc39.es/ecma262/multipage/reflection.html#sec-reflect.construct)
+- `javascript.builtins.Reflect.defineProperty` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Reflect/defineProperty) | [🔗spec](https://tc39.es/ecma262/multipage/reflection.html#sec-reflect.defineproperty)
+- `javascript.builtins.Reflect.deleteProperty` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Reflect/deleteProperty) | [🔗spec](https://tc39.es/ecma262/multipage/reflection.html#sec-reflect.deleteproperty)
+- `javascript.builtins.Reflect.get` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Reflect/get) | [🔗spec](https://tc39.es/ecma262/multipage/reflection.html#sec-reflect.get)
+- `javascript.builtins.Reflect.getOwnPropertyDescriptor` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Reflect/getOwnPropertyDescriptor) | [🔗spec](https://tc39.es/ecma262/multipage/reflection.html#sec-reflect.getownpropertydescriptor)
+- `javascript.builtins.Reflect.getPrototypeOf` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Reflect/getPrototypeOf) | [🔗spec](https://tc39.es/ecma262/multipage/reflection.html#sec-reflect.getprototypeof)
+- `javascript.builtins.Reflect.has` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Reflect/has) | [🔗spec](https://tc39.es/ecma262/multipage/reflection.html#sec-reflect.has)
+- `javascript.builtins.Reflect.isExtensible` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Reflect/isExtensible) | [🔗spec](https://tc39.es/ecma262/multipage/reflection.html#sec-reflect.isextensible)
+- `javascript.builtins.Reflect.ownKeys` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Reflect/ownKeys) | [🔗spec](https://tc39.es/ecma262/multipage/reflection.html#sec-reflect.ownkeys)
+- `javascript.builtins.Reflect.preventExtensions` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Reflect/preventExtensions) | [🔗spec](https://tc39.es/ecma262/multipage/reflection.html#sec-reflect.preventextensions)
+- `javascript.builtins.Reflect.set` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Reflect/set) | [🔗spec](https://tc39.es/ecma262/multipage/reflection.html#sec-reflect.set)
+- `javascript.builtins.Reflect.setPrototypeOf` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Reflect/setPrototypeOf) | [🔗spec](https://tc39.es/ecma262/multipage/reflection.html#sec-reflect.setprototypeof)
+- `javascript.builtins.RegExp.@@match` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/RegExp/@@match) | [🔗spec](https://tc39.es/ecma262/multipage/text-processing.html#sec-regexp.prototype-@@match)
+- `javascript.builtins.RegExp.@@matchAll` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/RegExp/@@matchAll) | [🔗spec](https://tc39.es/ecma262/multipage/text-processing.html#sec-regexp-prototype-matchall)
+- `javascript.builtins.RegExp.@@replace` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/RegExp/@@replace) | [🔗spec](https://tc39.es/ecma262/multipage/text-processing.html#sec-regexp.prototype-@@replace)
+- `javascript.builtins.RegExp.@@search` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/RegExp/@@search) | [🔗spec](https://tc39.es/ecma262/multipage/text-processing.html#sec-regexp.prototype-@@search)
+- `javascript.builtins.RegExp.@@species` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/RegExp/@@species) | [🔗spec](https://tc39.es/ecma262/multipage/text-processing.html#sec-get-regexp-@@species)
+- `javascript.builtins.RegExp.@@split` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/RegExp/@@split) | [🔗spec](https://tc39.es/ecma262/multipage/text-processing.html#sec-regexp.prototype-@@split)
+- `javascript.builtins.RegExp.dotAll` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/RegExp/dotAll) | [🔗spec](https://tc39.es/ecma262/multipage/text-processing.html#sec-get-regexp.prototype.dotAll)
+- `javascript.builtins.RegExp.flags` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/RegExp/flags) | [🔗spec](https://tc39.es/ecma262/multipage/text-processing.html#sec-get-regexp.prototype.flags)
+- `javascript.builtins.RegExp.named_capture_groups` | [🔗spec](https://tc39.es/ecma262/multipage/text-processing.html#sec-patterns)
+- `javascript.builtins.RegExp.property_escapes`
+- `javascript.builtins.RegExp.source.empty_regex_string`
+- `javascript.builtins.RegExp.sticky` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/RegExp/sticky) | [🔗spec](https://tc39.es/ecma262/multipage/text-processing.html#sec-get-regexp.prototype.sticky)
+- `javascript.builtins.RegExp.sticky.anchored_sticky_flag`
+- `javascript.builtins.RegExp.sticky.prototype_accessor`
+- `javascript.builtins.RegExp.unicode` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/RegExp/unicode) | [🔗spec](https://tc39.es/ecma262/multipage/text-processing.html#sec-get-regexp.prototype.unicode)
+- `javascript.builtins.Set.@@iterator` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Set/@@iterator) | [🔗spec](https://tc39.es/ecma262/multipage/keyed-collections.html#sec-set.prototype-@@iterator)
+- `javascript.builtins.Set.@@species` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Set/@@species) | [🔗spec](https://tc39.es/ecma262/multipage/keyed-collections.html#sec-get-set-@@species)
+- `javascript.builtins.Set.Set.iterable_allowed`
+- `javascript.builtins.Set.entries` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Set/entries) | [🔗spec](https://tc39.es/ecma262/multipage/keyed-collections.html#sec-set.prototype.entries)
+- `javascript.builtins.Set.key_equality_for_zeros`
+- `javascript.builtins.Set.values` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Set/values) | [🔗spec](https://tc39.es/ecma262/multipage/keyed-collections.html#sec-set.prototype.values)
+- `javascript.builtins.String.@@iterator` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String/@@iterator) | [🔗spec](https://tc39.es/ecma262/multipage/text-processing.html#sec-string.prototype-@@iterator)
+- `javascript.builtins.String.anchor` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String/anchor) | [🔗spec](https://tc39.es/ecma262/multipage/additional-ecmascript-features-for-web-browsers.html#sec-string.prototype.anchor)
+- `javascript.builtins.String.codePointAt` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String/codePointAt) | [🔗spec](https://tc39.es/ecma262/multipage/text-processing.html#sec-string.prototype.codepointat)
+- `javascript.builtins.String.endsWith` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String/endsWith) | [🔗spec](https://tc39.es/ecma262/multipage/text-processing.html#sec-string.prototype.endswith)
+- `javascript.builtins.String.fromCodePoint` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String/fromCodePoint) | [🔗spec](https://tc39.es/ecma262/multipage/text-processing.html#sec-string.fromcodepoint)
+- `javascript.builtins.String.includes` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String/includes) | [🔗spec](https://tc39.es/ecma262/multipage/text-processing.html#sec-string.prototype.includes)
+- `javascript.builtins.String.matchAll` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String/matchAll) | [🔗spec](https://tc39.es/ecma262/multipage/text-processing.html#sec-string.prototype.matchall)
+- `javascript.builtins.String.normalize` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String/normalize) | [🔗spec](https://tc39.es/ecma262/multipage/text-processing.html#sec-string.prototype.normalize)
+- `javascript.builtins.String.padEnd` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String/padEnd) | [🔗spec](https://tc39.es/ecma262/multipage/text-processing.html#sec-string.prototype.padend)
+- `javascript.builtins.String.padStart` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String/padStart) | [🔗spec](https://tc39.es/ecma262/multipage/text-processing.html#sec-string.prototype.padstart)
+- `javascript.builtins.String.raw` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String/raw) | [🔗spec](https://tc39.es/ecma262/multipage/text-processing.html#sec-string.raw)
+- `javascript.builtins.String.repeat` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String/repeat) | [🔗spec](https://tc39.es/ecma262/multipage/text-processing.html#sec-string.prototype.repeat)
+- `javascript.builtins.String.replace` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String/replace) | [🔗spec](https://tc39.es/ecma262/multipage/text-processing.html#sec-string.prototype.replace)
+- `javascript.builtins.String.replaceAll` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String/replaceAll) | [🔗spec](https://tc39.es/ecma262/multipage/text-processing.html#sec-string.prototype.replaceall)
+- `javascript.builtins.String.startsWith` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String/startsWith) | [🔗spec](https://tc39.es/ecma262/multipage/text-processing.html#sec-string.prototype.startswith)
+- `javascript.builtins.String.trimEnd` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String/trimEnd) | [🔗spec](https://tc39.es/ecma262/multipage/text-processing.html#sec-string.prototype.trimend)
+- `javascript.builtins.String.trimStart` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String/trimStart) | [🔗spec](https://tc39.es/ecma262/multipage/text-processing.html#sec-string.prototype.trimstart)
+- `javascript.builtins.Symbol` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Symbol) | [🔗spec](https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-symbol-objects)
+- `javascript.builtins.Symbol.@@toPrimitive` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Symbol/@@toPrimitive) | [🔗spec](https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-symbol.prototype-@@toprimitive)
+- `javascript.builtins.Symbol.Symbol` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Symbol/Symbol) | [🔗spec](https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-symbol-constructor)
+- `javascript.builtins.Symbol.asyncIterator` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Symbol/asyncIterator) | [🔗spec](https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-symbol.asynciterator)
+- `javascript.builtins.Symbol.description` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Symbol/description) | [🔗spec](https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-symbol.prototype.description)
+- `javascript.builtins.Symbol.for` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Symbol/for) | [🔗spec](https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-symbol.for)
+- `javascript.builtins.Symbol.hasInstance` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Symbol/hasInstance) | [🔗spec](https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-symbol.hasinstance)
+- `javascript.builtins.Symbol.isConcatSpreadable` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Symbol/isConcatSpreadable) | [🔗spec](https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-symbol.isconcatspreadable)
+- `javascript.builtins.Symbol.iterator` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Symbol/iterator) | [🔗spec](https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-symbol.iterator)
+- `javascript.builtins.Symbol.keyFor` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Symbol/keyFor) | [🔗spec](https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-symbol.keyfor)
+- `javascript.builtins.Symbol.match` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Symbol/match) | [🔗spec](https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-symbol.match)
+- `javascript.builtins.Symbol.matchAll` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Symbol/matchAll) | [🔗spec](https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-symbol.matchall)
+- `javascript.builtins.Symbol.replace` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Symbol/replace) | [🔗spec](https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-symbol.replace)
+- `javascript.builtins.Symbol.search` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Symbol/search) | [🔗spec](https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-symbol.search)
+- `javascript.builtins.Symbol.species` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Symbol/species) | [🔗spec](https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-symbol.species)
+- `javascript.builtins.Symbol.split` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Symbol/split) | [🔗spec](https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-symbol.split)
+- `javascript.builtins.Symbol.toPrimitive` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Symbol/toPrimitive) | [🔗spec](https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-symbol.toprimitive)
+- `javascript.builtins.Symbol.toStringTag` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Symbol/toStringTag) | [🔗spec](https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-symbol.tostringtag)
+- `javascript.builtins.Symbol.toStringTag.dom_objects` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Symbol/toStringTag#toStringTag_available_on_all_DOM_prototype_objects)
+- `javascript.builtins.Symbol.unscopables` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Symbol/unscopables) | [🔗spec](https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-symbol.unscopables)
+- `javascript.builtins.TypedArray.@@iterator` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/TypedArray/@@iterator) | [🔗spec](https://tc39.es/ecma262/multipage/indexed-collections.html#sec-%typedarray%.prototype-@@iterator)
+- `javascript.builtins.TypedArray.@@species` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/TypedArray/@@species) | [🔗spec](https://tc39.es/ecma262/multipage/indexed-collections.html#sec-get-%typedarray%-@@species)
+- `javascript.builtins.TypedArray.copyWithin` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/TypedArray/copyWithin) | [🔗spec](https://tc39.es/ecma262/multipage/indexed-collections.html#sec-%typedarray%.prototype.copywithin)
+- `javascript.builtins.TypedArray.entries` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/TypedArray/entries) | [🔗spec](https://tc39.es/ecma262/multipage/indexed-collections.html#sec-%typedarray%.prototype.entries)
+- `javascript.builtins.TypedArray.every` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/TypedArray/every) | [🔗spec](https://tc39.es/ecma262/multipage/indexed-collections.html#sec-%typedarray%.prototype.every)
+- `javascript.builtins.TypedArray.fill` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/TypedArray/fill) | [🔗spec](https://tc39.es/ecma262/multipage/indexed-collections.html#sec-%typedarray%.prototype.fill)
+- `javascript.builtins.TypedArray.filter` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/TypedArray/filter) | [🔗spec](https://tc39.es/ecma262/multipage/indexed-collections.html#sec-%typedarray%.prototype.filter)
+- `javascript.builtins.TypedArray.find` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/TypedArray/find) | [🔗spec](https://tc39.es/ecma262/multipage/indexed-collections.html#sec-%typedarray%.prototype.find)
+- `javascript.builtins.TypedArray.findIndex` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/TypedArray/findIndex) | [🔗spec](https://tc39.es/ecma262/multipage/indexed-collections.html#sec-%typedarray%.prototype.findindex)
+- `javascript.builtins.TypedArray.forEach` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/TypedArray/forEach) | [🔗spec](https://tc39.es/ecma262/multipage/indexed-collections.html#sec-%typedarray%.prototype.foreach)
+- `javascript.builtins.TypedArray.from` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/TypedArray/from) | [🔗spec](https://tc39.es/ecma262/multipage/indexed-collections.html#sec-%typedarray%.from)
+- `javascript.builtins.TypedArray.includes` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/TypedArray/includes) | [🔗spec](https://tc39.es/ecma262/multipage/indexed-collections.html#sec-%typedarray%.prototype.includes)
+- `javascript.builtins.TypedArray.indexOf` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/TypedArray/indexOf) | [🔗spec](https://tc39.es/ecma262/multipage/indexed-collections.html#sec-%typedarray%.prototype.indexof)
+- `javascript.builtins.TypedArray.iterable_in_constructor`
+- `javascript.builtins.TypedArray.join` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/TypedArray/join) | [🔗spec](https://tc39.es/ecma262/multipage/indexed-collections.html#sec-%typedarray%.prototype.join)
+- `javascript.builtins.TypedArray.keys` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/TypedArray/keys) | [🔗spec](https://tc39.es/ecma262/multipage/indexed-collections.html#sec-%typedarray%.prototype.keys)
+- `javascript.builtins.TypedArray.lastIndexOf` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/TypedArray/lastIndexOf) | [🔗spec](https://tc39.es/ecma262/multipage/indexed-collections.html#sec-%typedarray%.prototype.lastindexof)
+- `javascript.builtins.TypedArray.map` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/TypedArray/map) | [🔗spec](https://tc39.es/ecma262/multipage/indexed-collections.html#sec-%typedarray%.prototype.map)
+- `javascript.builtins.TypedArray.new_required`
+- `javascript.builtins.TypedArray.of` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/TypedArray/of) | [🔗spec](https://tc39.es/ecma262/multipage/indexed-collections.html#sec-%typedarray%.of)
+- `javascript.builtins.TypedArray.reduce` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/TypedArray/reduce) | [🔗spec](https://tc39.es/ecma262/multipage/indexed-collections.html#sec-%typedarray%.prototype.reduce)
+- `javascript.builtins.TypedArray.reduceRight` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/TypedArray/reduceRight) | [🔗spec](https://tc39.es/ecma262/multipage/indexed-collections.html#sec-%typedarray%.prototype.reduceright)
+- `javascript.builtins.TypedArray.reverse` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/TypedArray/reverse) | [🔗spec](https://tc39.es/ecma262/multipage/indexed-collections.html#sec-%typedarray%.prototype.reverse)
+- `javascript.builtins.TypedArray.slice` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/TypedArray/slice) | [🔗spec](https://tc39.es/ecma262/multipage/indexed-collections.html#sec-%typedarray%.prototype.slice)
+- `javascript.builtins.TypedArray.some` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/TypedArray/some) | [🔗spec](https://tc39.es/ecma262/multipage/indexed-collections.html#sec-%typedarray%.prototype.some)
+- `javascript.builtins.TypedArray.sort` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/TypedArray/sort) | [🔗spec](https://tc39.es/ecma262/multipage/indexed-collections.html#sec-%typedarray%.prototype.sort)
+- `javascript.builtins.TypedArray.values` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/TypedArray/values) | [🔗spec](https://tc39.es/ecma262/multipage/indexed-collections.html#sec-%typedarray%.prototype.values)
+- `javascript.builtins.Uint16Array.Uint16Array.iterable_allowed`
+- `javascript.builtins.Uint16Array.Uint16Array.new_required`
+- `javascript.builtins.Uint32Array.Uint32Array.iterable_allowed`
+- `javascript.builtins.Uint32Array.Uint32Array.new_required`
+- `javascript.builtins.Uint8Array.Uint8Array.iterable_allowed`
+- `javascript.builtins.Uint8Array.Uint8Array.new_required`
+- `javascript.builtins.Uint8ClampedArray.Uint8ClampedArray.iterable_allowed`
+- `javascript.builtins.Uint8ClampedArray.Uint8ClampedArray.new_required`
+- `javascript.builtins.WeakMap.WeakMap.iterable_allowed`
+- `javascript.builtins.WeakSet` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/WeakSet) | [🔗spec](https://tc39.es/ecma262/multipage/keyed-collections.html#sec-weakset-objects)
+- `javascript.builtins.WeakSet.WeakSet` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/WeakSet/WeakSet) | [🔗spec](https://tc39.es/ecma262/multipage/keyed-collections.html#sec-weakset-constructor)
+- `javascript.builtins.WeakSet.WeakSet.iterable_allowed`
+- `javascript.builtins.WeakSet.WeakSet.null_allowed`
+- `javascript.builtins.WeakSet.add` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/WeakSet/add) | [🔗spec](https://tc39.es/ecma262/multipage/keyed-collections.html#sec-weakset.prototype.add)
+- `javascript.builtins.WeakSet.delete` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/WeakSet/delete) | [🔗spec](https://tc39.es/ecma262/multipage/keyed-collections.html#sec-weakset.prototype.delete)
+- `javascript.builtins.WeakSet.has` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/WeakSet/has) | [🔗spec](https://tc39.es/ecma262/multipage/keyed-collections.html#sec-weakset.prototype.has)
+- `javascript.builtins.WebAssembly` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly) | [🔗spec](https://webassembly.github.io/spec/js-api/#webassembly-namespace)
+- `javascript.builtins.WebAssembly.CompileError` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/CompileError) | [🔗spec](https://webassembly.github.io/spec/js-api/#exceptiondef-compileerror,https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-native-error-types-used-in-this-standard)
+- `javascript.builtins.WebAssembly.CompileError.CompileError` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/CompileError/CompileError) | [🔗spec](https://webassembly.github.io/spec/js-api/#exceptiondef-compileerror,https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-nativeerror-constructors)
+- `javascript.builtins.WebAssembly.Global` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/Global) | [🔗spec](https://webassembly.github.io/spec/js-api/#globals)
+- `javascript.builtins.WebAssembly.Global.Global` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/Global/Global) | [🔗spec](https://webassembly.github.io/spec/js-api/#dom-global-global)
+- `javascript.builtins.WebAssembly.Global.value` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/Global/value) | [🔗spec](https://webassembly.github.io/spec/js-api/#dom-global-value)
+- `javascript.builtins.WebAssembly.Instance` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/Instance) | [🔗spec](https://webassembly.github.io/spec/js-api/#instances)
+- `javascript.builtins.WebAssembly.Instance.Instance` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/Instance/Instance) | [🔗spec](https://webassembly.github.io/spec/js-api/#dom-instance-instance)
+- `javascript.builtins.WebAssembly.Instance.exports` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/Instance/exports) | [🔗spec](https://webassembly.github.io/spec/js-api/#dom-instance-exports)
+- `javascript.builtins.WebAssembly.LinkError` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/LinkError) | [🔗spec](https://webassembly.github.io/spec/js-api/#exceptiondef-linkerror,https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-native-error-types-used-in-this-standard)
+- `javascript.builtins.WebAssembly.LinkError.LinkError` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/LinkError/LinkError) | [🔗spec](https://webassembly.github.io/spec/js-api/#exceptiondef-linkerror,https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-nativeerror-constructors)
+- `javascript.builtins.WebAssembly.Memory` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/Memory) | [🔗spec](https://webassembly.github.io/spec/js-api/#memories)
+- `javascript.builtins.WebAssembly.Memory.Memory` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/Memory/Memory) | [🔗spec](https://webassembly.github.io/spec/js-api/#dom-memory-memory)
+- `javascript.builtins.WebAssembly.Memory.buffer` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/Memory/buffer) | [🔗spec](https://webassembly.github.io/spec/js-api/#dom-memory-buffer)
+- `javascript.builtins.WebAssembly.Memory.grow` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/Memory/grow) | [🔗spec](https://webassembly.github.io/spec/js-api/#dom-memory-grow)
+- `javascript.builtins.WebAssembly.Module` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/Module) | [🔗spec](https://webassembly.github.io/spec/js-api/#modules)
+- `javascript.builtins.WebAssembly.Module.Module` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/Module/Module) | [🔗spec](https://webassembly.github.io/spec/js-api/#dom-module-module)
+- `javascript.builtins.WebAssembly.Module.customSections` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/Module/customSections) | [🔗spec](https://webassembly.github.io/spec/js-api/#dom-module-customsections)
+- `javascript.builtins.WebAssembly.Module.exports` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/Module/exports) | [🔗spec](https://webassembly.github.io/spec/js-api/#dom-module-exports)
+- `javascript.builtins.WebAssembly.Module.imports` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/Module/imports) | [🔗spec](https://webassembly.github.io/spec/js-api/#dom-module-imports)
+- `javascript.builtins.WebAssembly.RuntimeError` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/RuntimeError) | [🔗spec](https://webassembly.github.io/spec/js-api/#exceptiondef-runtimeerror,https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-native-error-types-used-in-this-standard)
+- `javascript.builtins.WebAssembly.RuntimeError.RuntimeError` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/RuntimeError/RuntimeError) | [🔗spec](https://webassembly.github.io/spec/js-api/#exceptiondef-runtimeerror,https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-nativeerror-constructors)
+- `javascript.builtins.WebAssembly.Table` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/Table) | [🔗spec](https://webassembly.github.io/spec/js-api/#tables)
+- `javascript.builtins.WebAssembly.Table.Table` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/Table/Table) | [🔗spec](https://webassembly.github.io/spec/js-api/#dom-table-table)
+- `javascript.builtins.WebAssembly.Table.get` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/Table/get) | [🔗spec](https://webassembly.github.io/spec/js-api/#dom-table-get)
+- `javascript.builtins.WebAssembly.Table.grow` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/Table/grow) | [🔗spec](https://webassembly.github.io/spec/js-api/#dom-table-grow)
+- `javascript.builtins.WebAssembly.Table.length` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/Table/length) | [🔗spec](https://webassembly.github.io/spec/js-api/#dom-table-length)
+- `javascript.builtins.WebAssembly.Table.set` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/Table/set) | [🔗spec](https://webassembly.github.io/spec/js-api/#dom-table-set)
+- `javascript.builtins.WebAssembly.compile` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/compile) | [🔗spec](https://webassembly.github.io/spec/js-api/#dom-webassembly-compile)
+- `javascript.builtins.WebAssembly.instantiate` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/instantiate) | [🔗spec](https://webassembly.github.io/spec/js-api/#dom-webassembly-instantiate)
+- `javascript.builtins.WebAssembly.validate` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/validate) | [🔗spec](https://webassembly.github.io/spec/js-api/#dom-webassembly-validate)
+- `javascript.builtins.globalThis` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/globalThis) | [🔗spec](https://tc39.es/ecma262/multipage/global-object.html#sec-globalthis)
+- `javascript.classes` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Classes) | [🔗spec](https://tc39.es/ecma262/multipage/ecmascript-language-functions-and-classes.html#sec-class-definitions)
+- `javascript.classes.extends` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Classes/extends) | [🔗spec](https://tc39.es/ecma262/multipage/ecmascript-language-functions-and-classes.html#sec-class-definitions)
+- `javascript.classes.static` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Classes/static) | [🔗spec](https://tc39.es/ecma262/multipage/ecmascript-language-functions-and-classes.html#sec-class-definitions)
+- `javascript.functions.arguments.@@iterator` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Functions/arguments/@@iterator) | [🔗spec](https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-createunmappedargumentsobject,https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-createmappedargumentsobject)
+- `javascript.functions.arrow_functions` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Functions/Arrow_functions) | [🔗spec](https://tc39.es/ecma262/multipage/ecmascript-language-functions-and-classes.html#sec-arrow-function-definitions)
+- `javascript.functions.arrow_functions.trailing_comma`
+- `javascript.functions.default_parameters` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Functions/Default_parameters) | [🔗spec](https://tc39.es/ecma262/multipage/ecmascript-language-functions-and-classes.html#sec-function-definitions)
+- `javascript.functions.default_parameters.destructured_parameter_with_default_value_assignment`
+- `javascript.functions.default_parameters.parameters_without_defaults_after_default_parameters`
+- `javascript.functions.get.computed_property_names`
+- `javascript.functions.method_definitions` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Functions/Method_definitions) | [🔗spec](https://tc39.es/ecma262/multipage/ecmascript-language-functions-and-classes.html#sec-method-definitions)
+- `javascript.functions.method_definitions.async_generator_methods`
+- `javascript.functions.method_definitions.async_methods`
+- `javascript.functions.method_definitions.generator_methods_not_constructable`
+- `javascript.functions.rest_parameters` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Functions/rest_parameters) | [🔗spec](https://tc39.es/ecma262/multipage/ecmascript-language-functions-and-classes.html#sec-function-definitions)
+- `javascript.functions.rest_parameters.destructuring`
+- `javascript.functions.set.computed_property_names`
+- `javascript.grammar.binary_numeric_literals` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Lexical_grammar#Binary) | [🔗spec](https://tc39.es/ecma262/multipage/ecmascript-language-lexical-grammar.html#prod-BinaryIntegerLiteral)
+- `javascript.grammar.hashbang_comments` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Lexical_grammar#Hashbang_comments) | [🔗spec](https://tc39.es/proposal-hashbang/out.html#sec-updated-syntax)
+- `javascript.grammar.numeric_separators` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Lexical_grammar#Numeric_separators) | [🔗spec](https://tc39.es/ecma262/multipage/ecmascript-language-lexical-grammar.html#prod-NumericLiteralSeparator)
+- `javascript.grammar.octal_numeric_literals` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Lexical_grammar#Octal) | [🔗spec](https://tc39.es/ecma262/multipage/ecmascript-language-lexical-grammar.html#prod-OctalIntegerLiteral)
+- `javascript.grammar.shorthand_object_literals`
+- `javascript.grammar.template_literals` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Template_literals) | [🔗spec](https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#sec-template-literals)
+- `javascript.grammar.template_literals.template_literal_revision`
+- `javascript.grammar.trailing_commas.trailing_commas_in_functions`
+- `javascript.grammar.unicode_point_escapes` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Lexical_grammar#Unicode_code_point_escapes) | [🔗spec](https://tc39.es/ecma262/multipage/ecmascript-language-lexical-grammar.html#prod-UnicodeEscapeSequence)
+- `javascript.operators.async_function` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/async_function) | [🔗spec](https://tc39.es/ecma262/multipage/ecmascript-language-functions-and-classes.html#sec-async-function-definitions)
+- `javascript.operators.async_generator_function` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/async_function*) | [🔗spec](https://tc39.es/ecma262/multipage/ecmascript-language-functions-and-classes.html#sec-async-generator-function-definitions)
+- `javascript.operators.await` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/await) | [🔗spec](https://tc39.es/ecma262/multipage/ecmascript-language-functions-and-classes.html#sec-async-function-definitions)
+- `javascript.operators.class` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/class) | [🔗spec](https://tc39.es/ecma262/multipage/ecmascript-language-functions-and-classes.html#sec-class-definitions)
+- `javascript.operators.destructuring` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment) | [🔗spec](https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#sec-destructuring-assignment)
+- `javascript.operators.destructuring.computed_property_names`
+- `javascript.operators.destructuring.rest_in_arrays`
+- `javascript.operators.destructuring.rest_in_objects`
+- `javascript.operators.exponentiation` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/Exponentiation) | [🔗spec](https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#sec-exp-operator)
+- `javascript.operators.exponentiation_assignment` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/Exponentiation_assignment) | [🔗spec](https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#sec-assignment-operators)
+- `javascript.operators.function.trailing_comma`
+- `javascript.operators.generator_function` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/function*) | [🔗spec](https://tc39.es/ecma262/multipage/ecmascript-language-functions-and-classes.html#sec-generator-function-definitions)
+- `javascript.operators.generator_function.trailing_comma`
+- `javascript.operators.logical_and_assignment` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/Logical_AND_assignment) | [🔗spec](https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#sec-assignment-operators)
+- `javascript.operators.logical_nullish_assignment` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/Logical_nullish_assignment) | [🔗spec](https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#sec-assignment-operators)
+- `javascript.operators.logical_or_assignment` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/Logical_OR_assignment) | [🔗spec](https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#sec-assignment-operators)
+- `javascript.operators.new_target` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/new.target) | [🔗spec](https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-built-in-function-objects)
+- `javascript.operators.nullish_coalescing` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/Nullish_coalescing_operator) | [🔗spec](https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#prod-CoalesceExpression)
+- `javascript.operators.object_initializer.computed_property_names`
+- `javascript.operators.object_initializer.shorthand_method_names`
+- `javascript.operators.object_initializer.shorthand_property_names`
+- `javascript.operators.object_initializer.spread_properties`
+- `javascript.operators.optional_chaining` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/Optional_chaining) | [🔗spec](https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#prod-OptionalExpression)
+- `javascript.operators.spread.spread_in_arrays` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/Spread_syntax#Spread_in_array_literals) | [🔗spec](https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#sec-array-initializer)
+- `javascript.operators.spread.spread_in_function_calls` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/Spread_syntax#Spread_in_function_calls)
+- `javascript.operators.spread.spread_in_object_literals` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/Spread_syntax#Spread_in_object_literals) | [🔗spec](https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#sec-object-initializer)
+- `javascript.operators.super` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/super) | [🔗spec](https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#sec-super-keyword)
+- `javascript.operators.yield` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/yield) | [🔗spec](https://tc39.es/ecma262/multipage/ecmascript-language-functions-and-classes.html#prod-YieldExpression)
+- `javascript.operators.yield_star` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/yield*) | [🔗spec](https://tc39.es/ecma262/multipage/ecmascript-language-functions-and-classes.html#sec-generator-function-definitions-runtime-semantics-evaluation)
+- `javascript.statements.async_function` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/async_function) | [🔗spec](https://tc39.es/ecma262/multipage/ecmascript-language-functions-and-classes.html#sec-async-function-definitions)
+- `javascript.statements.async_generator_function` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/async_function*) | [🔗spec](https://tc39.es/ecma262/multipage/ecmascript-language-functions-and-classes.html#sec-async-generator-function-definitions)
+- `javascript.statements.class` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/class) | [🔗spec](https://tc39.es/ecma262/multipage/ecmascript-language-functions-and-classes.html#sec-class-definitions)
+- `javascript.statements.export` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/export) | [🔗spec](https://tc39.es/ecma262/multipage/ecmascript-language-scripts-and-modules.html#sec-exports)
+- `javascript.statements.export.default` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/export) | [🔗spec](https://tc39.es/ecma262/multipage/ecmascript-language-scripts-and-modules.html#sec-exports)
+- `javascript.statements.for_await_of` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/for-await...of) | [🔗spec](https://tc39.es/ecma262/multipage/ecmascript-language-statements-and-declarations.html#sec-for-in-and-for-of-statements)
+- `javascript.statements.for_of` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/for...of) | [🔗spec](https://tc39.es/ecma262/multipage/ecmascript-language-statements-and-declarations.html#sec-for-in-and-for-of-statements)
+- `javascript.statements.for_of.async_iterators`
+- `javascript.statements.for_of.closing_iterators`
+- `javascript.statements.function.trailing_comma_in_parameters`
+- `javascript.statements.generator_function` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function*) | [🔗spec](https://tc39.es/ecma262/multipage/ecmascript-language-functions-and-classes.html#sec-generator-function-definitions)
+- `javascript.statements.generator_function.IteratorResult_object`
+- `javascript.statements.generator_function.not_constructable_with_new`
+- `javascript.statements.generator_function.trailing_comma_in_parameters`
+- `javascript.statements.import` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/import) | [🔗spec](https://tc39.es/ecma262/multipage/ecmascript-language-scripts-and-modules.html#sec-imports,https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#sec-import-calls)
+- `javascript.statements.import.dynamic_import`
+- `javascript.statements.import_meta` | [🔗mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/import.meta) | [🔗spec](https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#prod-ImportMeta,https://html.spec.whatwg.org/multipage/webappapis.html#hostgetimportmetaproperties)
+- `javascript.statements.try_catch.optional_catch_binding`

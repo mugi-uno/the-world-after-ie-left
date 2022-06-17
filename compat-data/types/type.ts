@@ -11,9 +11,15 @@ export type CompatTable = {
   mdn_url?: string;
   spec_url?: string;
   support: {
-    [key in Browsers]?: {
-      version_added?: string | false;
-    };
+    [key in Browsers]?:
+      | {
+          version_added?: string | boolean;
+          prefix?: string;
+        }[]
+      | {
+          version_added: string | boolean;
+        }
+      | "mirror";
   };
 };
 
