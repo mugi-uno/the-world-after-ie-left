@@ -16,5 +16,8 @@
     "deepmerge": "^4.2.2",
     "dotenv": "^16.0.1",
     "ts-node": "^10.8.1"
+  },
+  "dependencies": {
+    "typescript": "^4.7.3"
   }
 }
