@@ -20,7 +20,8 @@ export const isIEEnabledFeature = (feature: Feature) => {
 
   if (!ie || ie === "mirror") return false;
 
-  return isFullSupport(ie);
+  const version = getVersion(ie);
+  return isValidVersion(version, true);
 };
 
 const getVersion = (
@@ -42,17 +43,13 @@ const getVersion = (
   return support.version_added;
 };
 
-export const isFullSupport = (supports: Support[] | Support | undefined) => {
-  const version = getVersion(supports);
-  return isValidVersion(version);
-};
-
 export const isValidVersion = (
-  version: VersionAdded | undefined
+  version: VersionAdded | undefined,
+  deprecatedIsValid: boolean = false
 ): version is string | true => {
   if (!version) return false;
   if (version === true) return true;
-  if (version.includes("≤")) return false;
+  if (!deprecatedIsValid && version.includes("≤")) return false;
 
   return true;
 };
