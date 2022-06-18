@@ -14,10 +14,12 @@ export type Browsers =
   | "samsunginternet_android"
   | "webview_android";
 
-export type CompatJson = {
-  [key: string]: CompatJson | CompatTable;
+export type Schema = Feature;
+
+export type Feature = {
+  [key: string]: Feature;
 } & {
-  __compat?: CompatTable;
+  __compat?: Compat;
 };
 
 export type VersionAdded = string | boolean | null;
@@ -39,7 +41,7 @@ export type Support = {
 
 export type CompatSupport = Support[] | Support | "mirror";
 
-export type CompatTable = {
+export type Compat = {
   description?: string;
   mdn_url?: string;
   spec_url?: string;
@@ -53,8 +55,8 @@ export type CompatTable = {
   };
 };
 
-export type CompatMap = {
-  key: string;
-  __features: CompatMap[];
-  __compat?: CompatTable | undefined;
-};
+// export type CompatMap = {
+//   key: string;
+//   __features: CompatMap[];
+//   __compat?: CompatTable | undefined;
+// };

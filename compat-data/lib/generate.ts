@@ -28,11 +28,13 @@ console.log(`MDN_REPO: ${mdnRepo}`);
   fs.writeFileSync(
     path.resolve(__dirname, "../tables/", "compatMap.ts"),
     `
-      import type { CompatMap } from './../types/type';
-      export const compatMap = ${JSON.stringify(compatMap)} as CompatMap;
+      import type { Schema } from './../types/type';
+      export const compatMap = ${JSON.stringify(
+        compatMap
+      )} as unknown as Schema;
       export const notIECompatMap = ${JSON.stringify(
         notIECompatMap
-      )} as CompatMap;
+      )} as unknown as Schema;
     `
   );
 })();

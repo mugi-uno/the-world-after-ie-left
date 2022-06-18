@@ -1,21 +1,20 @@
-import { CompatMap } from "../../types/type";
+import { Feature } from "../../types/type";
 import { hasSubFeatures, isIEEnabledFeature } from "../compatUtils";
 
-export const filterIEEnabledFeatures = (compat: CompatMap): CompatMap => {
-  const features = compat.__features.map((feature) =>
-    filterIEEnabledFeatures(feature)
-  );
+export const filterIEEnabledFeatures = (feature: Feature): Feature => {
+  let nonIeFeature: Feature = {};
 
-  // remove empty features
-  let emptyRemovedFeatures = features.filter((feature) => {
-    if (isIEEnabledFeature(feature) && !hasSubFeatures(feature)) {
-      return false;
+  nonIeFeature.__compat = feature.__compat;
+
+  for (const key in feature) {
+    if (key === "__compat") continue;
+
+    const subFeature = filterIEEnabledFeatures(feature[key] as Feature);
+
+    if (!isIEEnabledFeature(feature) || hasSubFeatures(feature)) {
+      nonIeFeature[key] = subFeature;
     }
-    return true;
-  });
+  }
 
-  return {
-    ...compat,
-    __features: emptyRemovedFeatures,
-  };
+  return nonIeFeature;
 };

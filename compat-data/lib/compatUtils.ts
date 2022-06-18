@@ -1,10 +1,11 @@
-import { CompatMap, Support, VersionAdded } from "./../types/type";
+import { Feature, Support, VersionAdded } from "./../types/type";
 
-export const hasSubFeatures = (feature: CompatMap) => {
-  return feature.__features.length > 0;
+export const hasSubFeatures = (feature: Feature) => {
+  const length = Object.keys(feature).length;
+  return length >= 2 || (length == 1 && !!feature["__compat"]);
 };
 
-export const isIEEnabledFeature = (feature: CompatMap) => {
+export const isIEEnabledFeature = (feature: Feature) => {
   const ie = feature.__compat?.support.ie;
 
   if (!ie || ie === "mirror") return false;

@@ -1,7 +1,7 @@
 import deepmerge from "deepmerge";
 import * as fs from "fs";
 import * as path from "path";
-import { CompatJson, CompatMap } from "../types/type";
+import { Feature } from "../types/type";
 
 const JS_COMPAT_DIR = "javascript";
 const CSS_COMPAT_DIR = "css";
@@ -40,32 +40,30 @@ const recursiveRead = async (filePath: string): Promise<string[]> => {
 };
 
 const convertAllJsonToTable = (texts: string[]) => {
-  let result!: CompatJson;
+  let feature!: Feature;
 
   texts.forEach((text) => {
     const json = JSON.parse(text);
-    result = deepmerge(result, json);
+    feature = deepmerge(feature, json);
   });
 
-  return convert(result);
+  return convert(feature);
 };
 
-const convert = (json: CompatJson, key: string = "__root__"): CompatMap => {
-  let features: CompatMap[] = [];
+const convert = (feature: Feature): Feature => {
+  let convertedFeature: Feature = {};
 
-  Object.keys(json).forEach((featureKey) => {
-    if (featureKey === "__compat") return;
+  Object.keys(feature).forEach((key) => {
+    if (key === "__compat") return;
 
-    const childJson = json[featureKey];
+    const childJson = feature[key];
 
     if (!childJson) return;
 
-    features.push(convert(childJson as CompatJson, featureKey));
+    convertedFeature[key] = convert(childJson as Feature);
   });
 
-  return {
-    key,
-    __features: features,
-    __compat: json["__compat"],
-  };
+  convertedFeature["__compat"] = feature["__compat"];
+
+  return convertedFeature;
 };
