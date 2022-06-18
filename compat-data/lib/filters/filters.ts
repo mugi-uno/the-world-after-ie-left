@@ -48,7 +48,9 @@ export const filterByMajorBrowsers = (versions: {
     if (hasSubFeatures(feature)) return true;
 
     return (
-      hasCompat(feature) && isEnabledFeatureOnMajorBrowser(feature, versions)
+      hasCompat(feature) &&
+      isEnabledFeatureOnMajorBrowser(feature, versions) &&
+      !isIEEnabledFeature(feature)
     );
   });
 };
