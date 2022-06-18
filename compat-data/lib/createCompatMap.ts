@@ -9,10 +9,13 @@ const HTML_COMPAT_DIR = "html";
 
 export const createCompatMap = async (mdnRepo: string) => {
   const jsFiles = await recursiveRead(path.resolve(mdnRepo, JS_COMPAT_DIR));
-  const cssFiles = await recursiveRead(path.resolve(mdnRepo, CSS_COMPAT_DIR));
-  const htmlFiles = await recursiveRead(path.resolve(mdnRepo, HTML_COMPAT_DIR));
+  // const cssFiles = await recursiveRead(path.resolve(mdnRepo, CSS_COMPAT_DIR));
+  // const htmlFiles = await recursiveRead(path.resolve(mdnRepo, HTML_COMPAT_DIR));
 
-  const table = convertAllJsonToTable([...jsFiles, ...cssFiles, ...htmlFiles]);
+  const table = convertAllJsonToTable([
+    ...jsFiles,
+    // ...cssFiles, ...htmlFiles
+  ]);
 
   return table;
 };

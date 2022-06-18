@@ -8,7 +8,7 @@ import type {
 
 export const hasSubFeatures = (feature: Feature) => {
   const length = Object.keys(feature).length;
-  return length >= 2 || (length == 1 && !!feature["__compat"]);
+  return length >= 2 || (length == 1 && !feature["__compat"]);
 };
 
 export const hasCompat = (feature: Feature) => {

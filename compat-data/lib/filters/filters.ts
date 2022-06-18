@@ -22,7 +22,7 @@ export const filter = (
 
     const subFeature = filter(feature[key] as Feature, filterFunc);
 
-    if (filterFunc(feature)) {
+    if (filterFunc(subFeature)) {
       filteredFeature[key] = subFeature;
     }
   }
