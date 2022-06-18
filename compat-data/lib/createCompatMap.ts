@@ -9,13 +9,10 @@ const HTML_COMPAT_DIR = "html";
 
 export const createCompatMap = async (mdnRepo: string) => {
   const jsFiles = await recursiveRead(path.resolve(mdnRepo, JS_COMPAT_DIR));
-  // const cssFiles = await recursiveRead(path.resolve(mdnRepo, CSS_COMPAT_DIR));
-  // const htmlFiles = await recursiveRead(path.resolve(mdnRepo, HTML_COMPAT_DIR));
+  const cssFiles = await recursiveRead(path.resolve(mdnRepo, CSS_COMPAT_DIR));
+  const htmlFiles = await recursiveRead(path.resolve(mdnRepo, HTML_COMPAT_DIR));
 
-  const table = convertAllJsonToTable([
-    ...jsFiles,
-    // ...cssFiles, ...htmlFiles
-  ]);
+  const table = convertAllJsonToTable([...jsFiles, ...cssFiles, ...htmlFiles]);
 
   return table;
 };
@@ -72,36 +69,3 @@ const convert = (json: CompatJson, key: string = "__root__"): CompatMap => {
     __compat: json["__compat"],
   };
 };
-
-// const removeIEEnabledFeature = (flatted: FlattenJson): FlattenJson => {
-//   const result: FlattenJson = {};
-
-//   Object.keys(flatted).forEach((key) => {
-//     const compat = flatted[key];
-
-//     if (!compat) return;
-
-//     const ie = compat.support.ie;
-
-//     if (ie === "mirror") return;
-
-//     if (!ie) {
-//       result[key] = compat;
-//       return;
-//     }
-
-//     if ("length" in ie) {
-//       // add partial implementation feature
-//       if (ie.some((s) => s.version_added && s.partial_implementation)) {
-//         result[key] = compat;
-//       }
-//       return;
-//     }
-
-//     if (!ie.version_added) {
-//       result[key] = compat;
-//     }
-//   });
-
-//   return result;
-// };

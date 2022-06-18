@@ -1,3 +1,4 @@
+import { filterIEEnabledFeatures } from "./filters/filterIEEnabledFeatures";
 import { exit } from "process";
 import * as dotenv from "dotenv";
 import * as fs from "fs";
@@ -21,12 +22,17 @@ if (!fs.existsSync(path.resolve(mdnRepo))) {
 console.log(`MDN_REPO: ${mdnRepo}`);
 
 (async () => {
-  const json = await createCompatMap(mdnRepo);
+  const compatMap = await createCompatMap(mdnRepo);
+  const notIECompatMap = filterIEEnabledFeatures(compatMap);
 
   fs.writeFileSync(
     path.resolve(__dirname, "../tables/", "compatMap.ts"),
     `
       import type { CompatMap } from './../types/type';
-      export const compatMap = ${JSON.stringify(json)} as CompatMap;`
+      export const compatMap = ${JSON.stringify(compatMap)} as CompatMap;
+      export const notIECompatMap = ${JSON.stringify(
+        notIECompatMap
+      )} as CompatMap;
+    `
   );
 })();

@@ -20,8 +20,10 @@ export type CompatJson = {
   __compat?: CompatTable;
 };
 
+export type VersionAdded = string | boolean | null;
+
 export type Support = {
-  version_added: string | boolean | null;
+  version_added: VersionAdded;
   version_removed?: string | boolean | null;
   prefix?: string;
   alternative_name?: string;
@@ -35,12 +37,14 @@ export type Support = {
   notes?: string[];
 };
 
+export type CompatSupport = Support[] | Support | "mirror";
+
 export type CompatTable = {
   description?: string;
   mdn_url?: string;
   spec_url?: string;
   support: {
-    [key in Browsers]?: Support[] | Support | "mirror";
+    [key in Browsers]?: CompatSupport;
   };
   status: {
     experimental: boolean;
