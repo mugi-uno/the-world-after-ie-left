@@ -1,4 +1,4 @@
-import { filterIEEnabledFeatures } from "./filters/filterIEEnabledFeatures";
+import { filterIEEnabledFeatures } from "./filters/filters";
 import { exit } from "process";
 import * as dotenv from "dotenv";
 import * as fs from "fs";

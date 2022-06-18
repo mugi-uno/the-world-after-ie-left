@@ -1,8 +1,18 @@
-import { Feature, Support, VersionAdded } from "./../types/type";
+import semver from "semver";
+import type {
+  CompatSupport,
+  Feature,
+  Support,
+  VersionAdded,
+} from "./../types/type";
 
 export const hasSubFeatures = (feature: Feature) => {
   const length = Object.keys(feature).length;
   return length >= 2 || (length == 1 && !!feature["__compat"]);
+};
+
+export const hasCompat = (feature: Feature) => {
+  return !!feature.__compat;
 };
 
 export const isIEEnabledFeature = (feature: Feature) => {
@@ -13,7 +23,9 @@ export const isIEEnabledFeature = (feature: Feature) => {
   return isFullSupport(ie);
 };
 
-export const isFullSupport = (supports: Support[] | Support | undefined) => {
+const getVersion = (
+  supports: Support[] | Support | undefined
+): string | boolean | null => {
   if (!supports) return false;
 
   let support: Support | undefined;
@@ -24,12 +36,20 @@ export const isFullSupport = (supports: Support[] | Support | undefined) => {
     support = supports;
   }
 
+  if (!support) return false;
   if (support.prefix || support.partial_implementation) return false;
 
-  return isValidVersion(support.version_added);
+  return support.version_added;
 };
 
-export const isValidVersion = (version: VersionAdded | undefined) => {
+export const isFullSupport = (supports: Support[] | Support | undefined) => {
+  const version = getVersion(supports);
+  return isValidVersion(version);
+};
+
+export const isValidVersion = (
+  version: VersionAdded | undefined
+): version is string | true => {
   if (!version) return false;
   if (version === true) return true;
   if (version.includes("≤")) return false;
@@ -37,38 +57,55 @@ export const isValidVersion = (version: VersionAdded | undefined) => {
   return true;
 };
 
-// const formatVersion = (ver: string) => {
-//   const verString = ver === "preview" ? "0" : ver;
+export const isEnabledFeatureOnMajorBrowser = (
+  feature: Feature,
+  versions: {
+    chrome: string;
+    safari: string;
+    edge: string;
+    firefox: string;
+  }
+) => {
+  const support = feature.__compat?.support;
 
-//   let vers = verString.split(".");
+  if (!support) return false;
 
-//   vers = [...vers, ...[...new Array(3 - vers.length).keys()].map(() => "0")];
+  if (
+    isSupportedVersion(support.chrome, versions.chrome) &&
+    isSupportedVersion(support.safari, versions.safari) &&
+    isSupportedVersion(support.edge, versions.edge, support.chrome) &&
+    isSupportedVersion(support.firefox, versions.firefox)
+  ) {
+    return true;
+  }
 
-//   return vers.join(".");
-// };
+  return false;
+};
 
-// const checkVersion = (
-//   support: FlattenJson[string]["support"][Browsers] | undefined,
-//   expectVersion: string,
-//   mirror?: FlattenJson[string]["support"][Browsers] | undefined
-// ): boolean => {
-//   if (!support) return false;
+const isSupportedVersion = (
+  support: CompatSupport | undefined,
+  expectVersion: string,
+  mirror?: CompatSupport | undefined
+): boolean => {
+  if (!support) return false;
+  if (support === "mirror") {
+    return isSupportedVersion(mirror!, expectVersion);
+  }
 
-//   if (support === "mirror") {
-//     return checkVersion(mirror!, expectVersion);
-//   }
+  const version = getVersion(support);
 
-//   let ver: string | boolean | undefined;
+  if (!isValidVersion(version)) return false;
+  if (version === true) return true;
 
-//   if ("length" in support) {
-//     const s = support.find((s) => isValidSupport(s));
-//     ver = s?.version_added;
-//   } else {
-//     ver = support.version_added;
-//   }
+  return semver.lte(formatVersion(version), expectVersion);
+};
 
-//   if (!isValidVersion(ver)) return false;
-//   if (ver === true) return true;
+const formatVersion = (ver: string) => {
+  const verString = ver === "preview" ? "0" : ver;
 
-//   return semver.lte(formatVersion(ver), expectVersion);
-// };
+  let vers = verString.split(".");
+
+  vers = [...vers, ...[...new Array(3 - vers.length).keys()].map(() => "0")];
+
+  return vers.join(".");
+};
