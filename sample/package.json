@@ -15,8 +15,5 @@
     "compat-data": "workspace:^1.0.0",
     "ts-node": "^10.8.1",
     "typescript": "^4.7.3"
-  },
-  "dependencies": {
-    "semver": "^7.3.7"
   }
 }

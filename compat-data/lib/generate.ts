@@ -2,7 +2,7 @@ import { exit } from "process";
 import * as dotenv from "dotenv";
 import * as fs from "fs";
 import * as path from "path";
-import { createIENonSupportedTable } from "./createIENonSupportedTable";
+import { createCompatMap } from "./createCompatMap";
 
 dotenv.config();
 
@@ -21,14 +21,12 @@ if (!fs.existsSync(path.resolve(mdnRepo))) {
 console.log(`MDN_REPO: ${mdnRepo}`);
 
 (async () => {
-  const json = await createIENonSupportedTable(mdnRepo);
+  const json = await createCompatMap(mdnRepo);
 
   fs.writeFileSync(
-    path.resolve(__dirname, "../tables/", "IENonSupportedCompatTable.ts"),
+    path.resolve(__dirname, "../tables/", "compatMap.ts"),
     `
-      import type { FlattenJson } from './../types/type';
-      export const IENonSupportedCompatTable = ${JSON.stringify(
-        json
-      )} as unknown as FlattenJson;`
+      import type { CompatMap } from './../types/type';
+      export const compatMap = ${JSON.stringify(json)} as CompatMap;`
   );
 })();

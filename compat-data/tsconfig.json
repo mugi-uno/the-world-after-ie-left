@@ -7,5 +7,5 @@
     "moduleResolution": "node",
     "declaration": true
   },
-  "include": ["./tables/**/*"]
+  "include": ["./index.ts"]
 }

@@ -1,4 +1,18 @@
-export type Browsers = "chrome" | "edge" | "firefox" | "ie" | "safari";
+export type Browsers =
+  | "chrome"
+  | "chrome_android"
+  | "deno"
+  | "edge"
+  | "firefox"
+  | "firefox_android"
+  | "ie"
+  | "nodejs"
+  | "opera"
+  | "opera_android"
+  | "safari"
+  | "safari_ios"
+  | "samsunginternet_android"
+  | "webview_android";
 
 export type CompatJson = {
   [key: string]: CompatJson | CompatTable;
@@ -7,9 +21,18 @@ export type CompatJson = {
 };
 
 export type Support = {
-  version_added?: string | boolean;
-  partial_implementation?: boolean;
+  version_added: string | boolean | null;
+  version_removed?: string | boolean | null;
   prefix?: string;
+  alternative_name?: string;
+  flags?: {
+    type: "preference" | "runtime_flag";
+    name: string;
+    value_to_set: string;
+  };
+  impl_url?: string;
+  partial_implementation?: boolean;
+  notes?: string[];
 };
 
 export type CompatTable = {
@@ -19,8 +42,15 @@ export type CompatTable = {
   support: {
     [key in Browsers]?: Support[] | Support | "mirror";
   };
+  status: {
+    experimental: boolean;
+    standard_track: boolean;
+    deprecated: boolean;
+  };
 };
 
-export type FlattenJson = {
-  [key: string]: CompatTable;
+export type CompatMap = {
+  key: string;
+  __features: CompatMap[];
+  __compat?: CompatTable | undefined;
 };
