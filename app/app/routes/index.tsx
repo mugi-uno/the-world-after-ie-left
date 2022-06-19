@@ -1,7 +1,7 @@
 import { json } from "@remix-run/node";
 import { useLoaderData } from "@remix-run/react";
-import { filterByMajorBrowsers } from "compat-data";
-import type { Feature } from "compat-data/types/type";
+import { filterByMajorBrowsers } from "~/compat-data";
+import type { Feature } from "~/compat-data/types/type";
 import { FeatureContainer } from "~/components/FeatureContainer";
 
 const VERSIONS = {

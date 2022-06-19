@@ -1,4 +1,4 @@
-import type { Feature } from "compat-data/types/type";
+import type { Feature } from "~/compat-data/types/type";
 import React from "react";
 import { FeatureLinks } from "./FeatureLinks";
 
