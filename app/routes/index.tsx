@@ -1,36 +1,37 @@
 import { json, LoaderFunction } from "@remix-run/node";
 import { useLoaderData } from "@remix-run/react";
-import { ChangeEventHandler, ReactEventHandler, useState } from "react";
+import { useState } from "react";
 import { FeatureContainer } from "~/components/FeatureContainer";
+import { VersionInput } from "~/components/VersionInput";
 import { filterByMajorBrowsers } from "~/lib/compat-data/lib/filters/filters";
 import { Feature } from "~/lib/compat-data/types/type";
 
-const DEFAULT_VERSIONS = {
-  chrome: "92.0.0",
-  safari: "14.0.0",
-  edge: "92.0.0",
-  firefox: "91.0.0",
+type Versions = {
+  chrome: string;
+  safari: string;
+  edge: string;
+  firefox: string;
 };
 
 export const loader: LoaderFunction = async ({ request }) => {
   const param = new URL(request.url).searchParams;
 
-  const checkVersion = (ver: string | null, defaultVersion: string) => {
-    if (!ver) return defaultVersion;
+  const checkVersion = (ver: string | null) => {
+    if (!ver) return "";
 
     const trimedVer = ver.trim();
     if (trimedVer.match(/^[0-9]+(\.[0-9]+)?(\.[0-9]+)?$/)) {
       return trimedVer;
     }
 
-    return defaultVersion;
+    return "";
   };
 
   const version = {
-    chrome: checkVersion(param.get("chrome"), DEFAULT_VERSIONS.chrome),
-    safari: checkVersion(param.get("safari"), DEFAULT_VERSIONS.safari),
-    edge: checkVersion(param.get("edge"), DEFAULT_VERSIONS.edge),
-    firefox: checkVersion(param.get("firefox"), DEFAULT_VERSIONS.firefox),
+    chrome: checkVersion(param.get("chrome")),
+    safari: checkVersion(param.get("safari")),
+    edge: checkVersion(param.get("edge")),
+    firefox: checkVersion(param.get("firefox")),
   };
 
   const compat = filterByMajorBrowsers(version);
@@ -41,17 +42,14 @@ export const loader: LoaderFunction = async ({ request }) => {
 export default function Index() {
   const { compat, version } = useLoaderData<{
     compat: Feature;
-    version: typeof DEFAULT_VERSIONS;
+    version: Versions;
   }>();
 
-  const [versionState, setVersionState] = useState<typeof DEFAULT_VERSIONS>({
+  const [versionState, setVersionState] = useState<Versions>({
     ...version,
   });
 
-  const onChangeVersion = (
-    key: keyof typeof DEFAULT_VERSIONS,
-    value: string
-  ) => {
+  const onChangeVersion = (key: keyof Versions, value: string) => {
     setVersionState({
       ...versionState,
       [key]: value,
@@ -82,39 +80,31 @@ export default function Index() {
 
       <div className="text-[12px] ml-2">
         <div className="mb-[1px]">
-          Chrome ≧
-          <input
-            type="string"
-            defaultValue={version.chrome}
-            className="outline-none border-gray-400 border-solid border-w-[1px] border rounded-sm ml-1 w-[60px]"
-            onChange={(e) => onChangeVersion("chrome", e.target.value)}
+          <VersionInput
+            label="Chrome"
+            value={versionState.chrome}
+            onChange={(value) => onChangeVersion("chrome", value)}
           />
         </div>
         <div className="mb-[1px]">
-          Safari ≧
-          <input
-            type="string"
-            defaultValue={version.safari}
-            className="outline-none border-gray-400 border-solid border-w-[1px] border rounded-sm ml-1 w-[60px]"
-            onChange={(e) => onChangeVersion("safari", e.target.value)}
+          <VersionInput
+            label="Safari"
+            value={versionState.safari}
+            onChange={(value) => onChangeVersion("safari", value)}
           />
         </div>
         <div className="mb-[1px]">
-          Edge ≧
-          <input
-            type="string"
-            defaultValue={version.edge}
-            className="outline-none border-gray-400 border-solid border-w-[1px] border rounded-sm ml-1 w-[60px]"
-            onChange={(e) => onChangeVersion("edge", e.target.value)}
+          <VersionInput
+            label="Firefox"
+            value={versionState.firefox}
+            onChange={(value) => onChangeVersion("firefox", value)}
           />
         </div>
         <div className="mb-[1px]">
-          Firefox ≧
-          <input
-            type="string"
-            defaultValue={version.firefox}
-            className="outline-none border-gray-400 border-solid border-w-[1px] border rounded-sm ml-1 w-[60px]"
-            onChange={(e) => onChangeVersion("firefox", e.target.value)}
+          <VersionInput
+            label="Edge"
+            value={versionState.edge}
+            onChange={(value) => onChangeVersion("edge", value)}
           />
         </div>
 

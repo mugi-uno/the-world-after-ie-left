@@ -27,10 +27,8 @@ export const FeatureContainer: React.FC<{
           ))}
         </div>
         <div className="flex items-center">
-          <h2 className="font-bold mr-2">
-            <a href={`#${id}`} id={id}>
-              {name}
-            </a>
+          <h2 className="font-bold mr-2" id={id}>
+            <a href={`#${id}`}>{name}</a>
           </h2>
           <FeatureLinks feature={feature} />
         </div>

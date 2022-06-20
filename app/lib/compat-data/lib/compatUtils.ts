@@ -68,10 +68,11 @@ export const isEnabledFeatureOnMajorBrowser = (
   if (!support) return false;
 
   if (
-    isSupportedVersion(support.chrome, versions.chrome) &&
-    isSupportedVersion(support.safari, versions.safari) &&
-    isSupportedVersion(support.edge, versions.edge, support.chrome) &&
-    isSupportedVersion(support.firefox, versions.firefox)
+    (!versions.chrome || isSupportedVersion(support.chrome, versions.chrome)) &&
+    (!versions.safari || isSupportedVersion(support.safari, versions.safari)) &&
+    (!versions.edge ||
+      isSupportedVersion(support.edge, versions.edge, support.chrome)) &&
+    (!versions.firefox || isSupportedVersion(support.firefox, versions.firefox))
   ) {
     return true;
   }
@@ -94,7 +95,7 @@ const isSupportedVersion = (
   if (!isValidVersion(version)) return false;
   if (version === true) return true;
 
-  return semver.lte(formatVersion(version), expectVersion);
+  return semver.lte(formatVersion(version), formatVersion(expectVersion));
 };
 
 const formatVersion = (ver: string) => {
