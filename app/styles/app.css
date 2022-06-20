@@ -948,8 +948,16 @@ video {
   outline-offset: 0px;
 }
 
-.outline-gray-400 {
-  outline-color: #9ca3af;
+.outline-gray-700 {
+  outline-color: #374151;
+}
+
+.outline-gray-200 {
+  outline-color: #e5e7eb;
+}
+
+.outline-gray-300 {
+  outline-color: #d1d5db;
 }
 
 .blur {

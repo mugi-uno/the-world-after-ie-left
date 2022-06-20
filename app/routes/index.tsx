@@ -57,8 +57,19 @@ export default function Index() {
   };
 
   const onReload = () => {
-    const param = new URLSearchParams(versionState);
-    window.location.href = `/?${param.toString()}`;
+    const paramObject: Partial<Versions> = {};
+
+    for (const key in versionState) {
+      if (versionState[key as keyof Versions]) {
+        paramObject[key as keyof Versions] =
+          versionState[key as keyof Versions];
+      }
+    }
+
+    const param = new URLSearchParams(paramObject);
+    const query = param.toString();
+
+    window.location.href = query ? `/?${query}` : "/";
   };
 
   return (
@@ -110,7 +121,7 @@ export default function Index() {
 
         <button
           type="button"
-          className="px-2 rounded mt-1 bg-gray-200 outline-offset-0 outline outline-gray-400 transition-all hover:outline-offset-2"
+          className="px-2 rounded mt-1 bg-gray-200 outline-offset-0 outline outline-gray-300 transition-all hover:outline-offset-2"
           onClick={onReload}
         >
           🔁 Reload
