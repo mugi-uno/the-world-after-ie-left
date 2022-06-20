@@ -7,8 +7,9 @@ import { FeatureTree } from "./FeatureTree";
 export const FeatureContainer: React.FC<{
   feature: Feature;
   name: string;
+  id: string;
   badges: string[];
-}> = ({ feature, name, badges = [] }) => {
+}> = ({ feature, name, id, badges = [] }) => {
   const subFeatureKeys = Object.keys(feature);
   const hasSubFeature =
     subFeatureKeys.length >= 2 ||
@@ -26,7 +27,11 @@ export const FeatureContainer: React.FC<{
           ))}
         </div>
         <div className="flex items-center">
-          <h2 className="font-bold mr-2">{name}</h2>
+          <h2 className="font-bold mr-2">
+            <a href={`#${id}`} id={id}>
+              {name}
+            </a>
+          </h2>
           <FeatureLinks feature={feature} />
         </div>
         {compat?.description && (
@@ -42,7 +47,12 @@ export const FeatureContainer: React.FC<{
           {subFeatureKeys.map(
             (key) =>
               key !== "__compat" && (
-                <FeatureTree key={key} feature={feature[key]} name={key} />
+                <FeatureTree
+                  key={key}
+                  feature={feature[key]}
+                  name={key}
+                  id={`${id}-${key}`}
+                />
               )
           )}
         </div>

@@ -24,7 +24,7 @@ export default function Index() {
 
   return (
     <div>
-      <h2 className="text-2xl text-red-700">The world after IE left.</h2>
+      <h2 className="text-2xl text-red-700 ml-2">The world after IE left.</h2>
 
       <div className="text-gray-500 text-xs ml-2 mb-2">
         This page is based on data from{" "}
@@ -40,10 +40,18 @@ export default function Index() {
       </div>
 
       <div className="text-[8px] ml-2">
-        <div>Chrome ≧ {VERSIONS.chrome}</div>
-        <div>Safari ≧ {VERSIONS.safari}</div>
-        <div>Edge ≧ {VERSIONS.edge}</div>
-        <div>Firefox ≧ {VERSIONS.firefox}</div>
+        <div className="mb-[1px]">
+          Chrome ≧ <input type="string" defaultValue={VERSIONS.chrome} />
+        </div>
+        <div className="mb-[1px]">
+          Safari ≧ <input type="string" defaultValue={VERSIONS.safari} />
+        </div>
+        <div className="mb-[1px]">
+          Edge ≧ <input type="string" defaultValue={VERSIONS.edge} />
+        </div>
+        <div className="mb-[1px]">
+          Firefox ≧ <input type="string" defaultValue={VERSIONS.firefox} />
+        </div>
       </div>
 
       {Object.keys(compat).flatMap((key1) =>
@@ -57,6 +65,7 @@ export default function Index() {
                     key3 === "__compat" ? null : (
                       <FeatureContainer
                         key={`${key1}-${key2}-${key3}`}
+                        id={`${key1}-${key2}-${key3}`}
                         feature={compat[key1][key2][key3]}
                         name={key3}
                         badges={badges}

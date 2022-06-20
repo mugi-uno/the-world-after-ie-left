@@ -5,7 +5,8 @@ import { FeatureLinks } from "./FeatureLinks";
 export const FeatureTree: React.FC<{
   feature: Feature;
   name: string;
-}> = ({ feature, name }) => {
+  id: string;
+}> = ({ feature, name, id }) => {
   const subFeatureKeys = Object.keys(feature);
   const hasSubFeature =
     subFeatureKeys.length >= 2 ||
@@ -15,7 +16,11 @@ export const FeatureTree: React.FC<{
   return (
     <section className="ml-4 font-mono">
       <div className="flex items-center">
-        <h2 className="mr-2 text-sm">{name}</h2>
+        <h2 className="mr-2 text-sm">
+          <a href={`#${id}`} id={id}>
+            {name}
+          </a>
+        </h2>
         <FeatureLinks feature={feature} />
       </div>
 
@@ -33,7 +38,11 @@ export const FeatureTree: React.FC<{
             (key) =>
               key !== "__compat" && (
                 <li key={key}>
-                  <FeatureTree feature={feature[key]} name={key} />
+                  <FeatureTree
+                    feature={feature[key]}
+                    name={key}
+                    id={`${id}-${key}`}
+                  />
                 </li>
               )
           )}
