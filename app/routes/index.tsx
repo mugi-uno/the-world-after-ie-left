@@ -5,6 +5,7 @@ import { FeatureContainer } from "~/components/FeatureContainer";
 import { VersionInput } from "~/components/VersionInput";
 import { filterByMajorBrowsers } from "~/lib/compat-data/lib/filters/filters";
 import { Feature } from "~/lib/compat-data/types/type";
+import githubLogo from "~/styles/github.png";
 
 type Versions = {
   chrome: string;
@@ -74,7 +75,15 @@ export default function Index() {
 
   return (
     <div>
-      <h2 className="text-2xl text-red-700 ml-2">The world after IE left.</h2>
+      <div className="w-full flex justify-between items-center p-2">
+        <h2 className="text-2xl text-red-700">The world after IE left.</h2>
+        <a
+          href="https://github.com/mugi-uno/the-world-after-ie-left"
+          target="_blank"
+        >
+          <img src={githubLogo} className="w-4 h-4" />
+        </a>
+      </div>
 
       <div className="text-gray-500 text-xs ml-2 mb-2">
         This page is based on data from{" "}

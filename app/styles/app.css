@@ -749,8 +749,20 @@ video {
   display: none;
 }
 
+.h-4 {
+  height: 1rem;
+}
+
 .w-\[60px\] {
   width: 60px;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.w-4 {
+  width: 1rem;
 }
 
 .flex-shrink {
@@ -783,6 +795,10 @@ video {
 
 .items-center {
   align-items: center;
+}
+
+.justify-between {
+  justify-content: space-between;
 }
 
 .rounded {
@@ -946,14 +962,6 @@ video {
 
 .outline-offset-0 {
   outline-offset: 0px;
-}
-
-.outline-gray-700 {
-  outline-color: #374151;
-}
-
-.outline-gray-200 {
-  outline-color: #e5e7eb;
 }
 
 .outline-gray-300 {
