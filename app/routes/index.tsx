@@ -1,17 +1,23 @@
-import { json, LoaderFunction } from "@remix-run/node";
+import type { LoaderFunction } from "@remix-run/node";
+import { json } from "@remix-run/node";
 import { useLoaderData } from "@remix-run/react";
 import { useState } from "react";
-import { FeatureContainer } from "~/components/FeatureContainer";
+import { IdentifierRoot } from "~/components/identifiers/IdentifierRoot";
 import { VersionInput } from "~/components/VersionInput";
-import { filterByMajorBrowsers } from "~/lib/compat-data/lib/filters/filters";
-import { Feature } from "~/lib/compat-data/types/type";
+import { filterByMajorBrowsers } from "~/lib/filters";
 import githubLogo from "~/styles/github.png";
+import type { FilteredCompatData } from "~/types/types";
 
 type Versions = {
   chrome: string;
   safari: string;
   edge: string;
   firefox: string;
+};
+
+type LoaderData = {
+  compat: FilteredCompatData;
+  version: Versions;
 };
 
 export const loader: LoaderFunction = async ({ request }) => {
@@ -37,14 +43,11 @@ export const loader: LoaderFunction = async ({ request }) => {
 
   const compat = filterByMajorBrowsers(version);
 
-  return json({ compat, version });
+  return json<LoaderData>({ compat, version });
 };
 
 export default function Index() {
-  const { compat, version } = useLoaderData<{
-    compat: Feature;
-    version: Versions;
-  }>();
+  const { compat, version } = useLoaderData<LoaderData>();
 
   const [versionState, setVersionState] = useState<Versions>({
     ...version,
@@ -80,6 +83,7 @@ export default function Index() {
         <a
           href="https://github.com/mugi-uno/the-world-after-ie-left"
           target="_blank"
+          rel="noreferrer"
         >
           <img src={githubLogo} className="w-4 h-4" />
         </a>
@@ -137,26 +141,69 @@ export default function Index() {
         </button>
       </div>
 
-      {Object.keys(compat).flatMap((key1) =>
-        key1 === "__compat"
-          ? null
-          : Object.keys(compat[key1]).flatMap((key2) => {
-              const badges = [key1, key2];
-              return key2 === "__compat"
-                ? null
-                : Object.keys(compat[key1][key2]).flatMap((key3) =>
-                    key3 === "__compat" ? null : (
-                      <FeatureContainer
-                        key={`${key1}-${key2}-${key3}`}
-                        id={`${key1}-${key2}-${key3}`}
-                        feature={compat[key1][key2][key3]}
-                        name={key3}
-                        badges={badges}
-                      />
-                    )
-                  );
-            })
-      )}
+      <IdentifierRoot
+        identifier={compat["javascript"]}
+        id="javascript"
+        name="JavaScript"
+        unwrapDepth={2}
+        badgeClass="bg-[#fcff99]"
+      />
+
+      <IdentifierRoot
+        identifier={compat["css"]}
+        id="css"
+        name="CSS"
+        unwrapDepth={2}
+        badgeClass="bg-[#ff99bd]"
+      />
+
+      <IdentifierRoot
+        identifier={compat["html"]}
+        id="html"
+        name="HTML"
+        unwrapDepth={2}
+        badgeClass="bg-[#99ffa0]"
+      />
+
+      <IdentifierRoot
+        identifier={compat["svg"]}
+        id="svg"
+        name="SVG"
+        unwrapDepth={2}
+        badgeClass="bg-[#cc99ff]"
+      />
+
+      <IdentifierRoot
+        identifier={compat["api"]}
+        id="api"
+        name="API"
+        unwrapDepth={1}
+        badgeClass="bg-[#ff9999]"
+      />
+
+      <IdentifierRoot
+        identifier={compat["http"]}
+        id="http"
+        name="HTTP"
+        unwrapDepth={1}
+        badgeClass="bg-[#99afff]"
+      />
+
+      <IdentifierRoot
+        identifier={compat["webdriver"]}
+        id="webdriver"
+        name="WebDriver"
+        unwrapDepth={1}
+        badgeClass="bg-[#c1c1c1]"
+      />
+
+      <IdentifierRoot
+        identifier={compat["webextensions"]}
+        id="webextensions"
+        name="WebExtensions"
+        unwrapDepth={1}
+        badgeClass="bg-[#a2a9cd]"
+      />
     </div>
   );
 }

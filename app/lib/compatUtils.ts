@@ -1,40 +1,37 @@
-import semver from "semver";
 import type {
-  CompatSupport,
-  Feature,
-  Support,
-  VersionAdded,
-} from "./../types/type";
+  Identifier,
+  SimpleSupportStatement,
+  SupportStatement,
+  VersionValue,
+} from "@mdn/browser-compat-data";
+import semver from "semver";
 
-export const hasSubFeatures = (feature: Feature) => {
-  const length = Object.keys(feature).length;
-  return length >= 2 || (length == 1 && !feature["__compat"]);
+export const hasSubIdentifiers = (identifier: Identifier) => {
+  const length = Object.keys(identifier).length;
+  return length >= 2 || (length == 1 && !identifier["__compat"]);
 };
 
-export const hasCompat = (feature: Feature) => {
-  return !!feature.__compat;
+export const hasCompat = (identifier: Identifier) => {
+  return !!identifier.__compat;
 };
 
-export const isIEEnabledFeature = (feature: Feature) => {
-  const ie = feature.__compat?.support.ie;
-
-  if (!ie || ie === "mirror") return false;
-
+export const isIEEnabled = (identifier: Identifier) => {
+  const ie = identifier.__compat?.support.ie;
   const version = getVersion(ie);
   return isValidVersion(version, true);
 };
 
 const getVersion = (
-  supports: Support[] | Support | undefined
+  supportStatement: SupportStatement | undefined
 ): string | boolean | null => {
-  if (!supports) return false;
+  if (!supportStatement) return false;
 
-  let support: Support | undefined;
+  let support: SimpleSupportStatement | undefined;
 
-  if ("length" in supports) {
-    support = supports[0];
+  if ("length" in supportStatement) {
+    support = supportStatement[0];
   } else {
-    support = supports;
+    support = supportStatement;
   }
 
   if (!support) return false;
@@ -44,7 +41,7 @@ const getVersion = (
 };
 
 export const isValidVersion = (
-  version: VersionAdded | undefined,
+  version: VersionValue | undefined,
   deprecatedIsValid: boolean = false
 ): version is string | true => {
   if (!version) return false;
@@ -54,8 +51,8 @@ export const isValidVersion = (
   return true;
 };
 
-export const isEnabledFeatureOnMajorBrowser = (
-  feature: Feature,
+export const isEnabledOnMajorBrowser = (
+  identifier: Identifier,
   versions: {
     chrome: string;
     safari: string;
@@ -63,15 +60,14 @@ export const isEnabledFeatureOnMajorBrowser = (
     firefox: string;
   }
 ) => {
-  const support = feature.__compat?.support;
+  const support = identifier.__compat?.support;
 
   if (!support) return false;
 
   if (
     (!versions.chrome || isSupportedVersion(support.chrome, versions.chrome)) &&
     (!versions.safari || isSupportedVersion(support.safari, versions.safari)) &&
-    (!versions.edge ||
-      isSupportedVersion(support.edge, versions.edge, support.chrome)) &&
+    (!versions.edge || isSupportedVersion(support.edge, versions.edge)) &&
     (!versions.firefox || isSupportedVersion(support.firefox, versions.firefox))
   ) {
     return true;
@@ -81,14 +77,10 @@ export const isEnabledFeatureOnMajorBrowser = (
 };
 
 const isSupportedVersion = (
-  support: CompatSupport | undefined,
-  expectVersion: string,
-  mirror?: CompatSupport | undefined
+  support: SupportStatement | undefined,
+  expectVersion: string
 ): boolean => {
   if (!support) return false;
-  if (support === "mirror") {
-    return isSupportedVersion(mirror!, expectVersion);
-  }
 
   const version = getVersion(support);
 

@@ -1,10 +1,10 @@
+import type { Identifier } from "@mdn/browser-compat-data";
 import React from "react";
-import { Feature } from "~/lib/compat-data/types/type";
 
-export const FeatureLinks: React.FC<{
-  feature: Feature;
-}> = ({ feature }) => {
-  const compat = feature.__compat;
+export const IdentifierLink: React.FC<{
+  identifier: Identifier;
+}> = ({ identifier }) => {
+  const compat = identifier.__compat;
 
   return (
     <>

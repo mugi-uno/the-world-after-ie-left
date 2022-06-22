@@ -1,17 +1,17 @@
+import type { Identifier } from "@mdn/browser-compat-data";
 import React from "react";
-import { Feature } from "~/lib/compat-data/types/type";
-import { FeatureLinks } from "./FeatureLinks";
+import { IdentifierLink } from "./IdentifierLink";
 
-export const FeatureTree: React.FC<{
-  feature: Feature;
+export const IdentifierTree: React.FC<{
+  identifier: Identifier;
   name: string;
   id: string;
-}> = ({ feature, name, id }) => {
-  const subFeatureKeys = Object.keys(feature);
-  const hasSubFeature =
-    subFeatureKeys.length >= 2 ||
-    (subFeatureKeys.length === 1 && subFeatureKeys[0] !== "__compat");
-  const compat = feature.__compat;
+}> = ({ identifier, name, id }) => {
+  const subIdentifierKeys = Object.keys(identifier);
+  const hasSubIdentifier =
+    subIdentifierKeys.length >= 2 ||
+    (subIdentifierKeys.length === 1 && subIdentifierKeys[0] !== "__compat");
+  const compat = identifier.__compat;
 
   return (
     <section className="ml-4 font-mono">
@@ -19,7 +19,7 @@ export const FeatureTree: React.FC<{
         <h2 className="mr-2 text-sm" id={id}>
           <a href={`#${id}`}>{name}</a>
         </h2>
-        <FeatureLinks feature={feature} />
+        <IdentifierLink identifier={identifier} />
       </div>
 
       {compat?.description && (
@@ -30,14 +30,14 @@ export const FeatureTree: React.FC<{
       )}
       <div className="border-w-[1px] border-solid border-b"></div>
 
-      {hasSubFeature && (
+      {hasSubIdentifier && (
         <ul>
-          {subFeatureKeys.map(
+          {subIdentifierKeys.map(
             (key) =>
               key !== "__compat" && (
                 <li key={key}>
-                  <FeatureTree
-                    feature={feature[key]}
+                  <IdentifierTree
+                    identifier={identifier[key]}
                     name={key}
                     id={`${id}-${key}`}
                   />
