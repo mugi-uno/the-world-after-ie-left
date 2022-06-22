@@ -164,7 +164,7 @@ export default function Index() {
         unwrapDepth={2}
         badgeClass="bg-[#99ffa0]"
       />
-
+      {/* 
       <IdentifierRoot
         identifier={compat["svg"]}
         id="svg"
@@ -203,7 +203,7 @@ export default function Index() {
         name="WebExtensions"
         unwrapDepth={1}
         badgeClass="bg-[#a2a9cd]"
-      />
+      /> */}
     </div>
   );
 }
