@@ -2,12 +2,12 @@ import type { FilteredCompatData } from "./types/types";
 
 export const ROOT_IDENTIFIERS: (keyof FilteredCompatData)[] = [
   "html",
-  "api",
+  // "api",
   "javascript",
   "css",
-  "http",
-  "mathml",
-  "svg",
-  "webdriver",
-  "webextensions",
+  // "http",
+  // "mathml",
+  // "svg",
+  // "webdriver",
+  // "webextensions",
 ];
