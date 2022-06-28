@@ -18,7 +18,7 @@ type Versions = {
 };
 
 type LoaderData = {
-  compat: FilteredCompatData;
+  compat: Partial<FilteredCompatData>;
   version: Versions;
   identifier: keyof FilteredCompatData;
   currentQuery: string;
@@ -56,7 +56,7 @@ export const loader: LoaderFunction = async ({ request }) => {
   const compat = filterByMajorBrowsers(version, identifier);
 
   return json<LoaderData>({
-    compat,
+    compat: { [identifier]: compat[identifier] },
     version,
     identifier,
     currentQuery: param.toString(),
@@ -210,7 +210,7 @@ export default function Index() {
 
       {identifier === "javascript" && (
         <IdentifierRoot
-          identifier={compat["javascript"]}
+          identifier={compat["javascript"]!}
           id="javascript"
           name="JavaScript"
           unwrapDepth={2}
@@ -220,7 +220,7 @@ export default function Index() {
 
       {identifier === "css" && (
         <IdentifierRoot
-          identifier={compat["css"]}
+          identifier={compat["css"]!}
           id="css"
           name="CSS"
           unwrapDepth={2}
@@ -230,7 +230,7 @@ export default function Index() {
 
       {identifier === "html" && (
         <IdentifierRoot
-          identifier={compat["html"]}
+          identifier={compat["html"]!}
           id="html"
           name="HTML"
           unwrapDepth={2}
@@ -240,7 +240,7 @@ export default function Index() {
 
       {identifier === "svg" && (
         <IdentifierRoot
-          identifier={compat["svg"]}
+          identifier={compat["svg"]!}
           id="svg"
           name="SVG"
           unwrapDepth={2}
@@ -250,7 +250,7 @@ export default function Index() {
 
       {identifier === "api" && (
         <IdentifierRoot
-          identifier={compat["api"]}
+          identifier={compat["api"]!}
           id="api"
           name="API"
           unwrapDepth={1}
@@ -260,7 +260,7 @@ export default function Index() {
 
       {identifier === "http" && (
         <IdentifierRoot
-          identifier={compat["http"]}
+          identifier={compat["http"]!}
           id="http"
           name="HTTP"
           unwrapDepth={1}
@@ -280,7 +280,7 @@ export default function Index() {
 
       {identifier === "webextensions" && (
         <IdentifierRoot
-          identifier={compat["webextensions"]}
+          identifier={compat["webextensions"]!}
           id="webextensions"
           name="WebExtensions"
           unwrapDepth={1}
