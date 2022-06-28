@@ -2,8 +2,10 @@ import type { LoaderFunction } from "@remix-run/node";
 import { json } from "@remix-run/node";
 import { useLoaderData } from "@remix-run/react";
 import { useState } from "react";
+import { IdentifierLink } from "~/components/IdentifierLink";
 import { IdentifierRoot } from "~/components/identifiers/IdentifierRoot";
 import { VersionInput } from "~/components/VersionInput";
+import { ROOT_IDENTIFIERS } from "~/constant";
 import { filterByMajorBrowsers } from "~/lib/filters";
 import githubLogo from "~/styles/github.png";
 import type { FilteredCompatData } from "~/types/types";
@@ -18,10 +20,20 @@ type Versions = {
 type LoaderData = {
   compat: FilteredCompatData;
   version: Versions;
+  identifier: keyof FilteredCompatData;
+  currentQuery: string;
 };
 
 export const loader: LoaderFunction = async ({ request }) => {
   const param = new URL(request.url).searchParams;
+
+  const viewParam = param.get("view");
+
+  const identifier: keyof FilteredCompatData =
+    viewParam &&
+    ROOT_IDENTIFIERS.includes(viewParam as keyof FilteredCompatData)
+      ? (viewParam as keyof FilteredCompatData)
+      : "javascript";
 
   const checkVersion = (ver: string | null) => {
     if (!ver) return "";
@@ -41,16 +53,19 @@ export const loader: LoaderFunction = async ({ request }) => {
     firefox: checkVersion(param.get("firefox")),
   };
 
-  const compat = filterByMajorBrowsers(version);
+  const compat = filterByMajorBrowsers(version, identifier);
 
   return json<LoaderData>({
-    compat: { javascript: compat["javascript"] },
+    compat,
     version,
+    identifier,
+    currentQuery: param.toString(),
   });
 };
 
 export default function Index() {
-  const { compat, version } = useLoaderData<LoaderData>();
+  const { compat, version, identifier, currentQuery } =
+    useLoaderData<LoaderData>();
 
   const [versionState, setVersionState] = useState<Versions>({
     ...version,
@@ -64,19 +79,23 @@ export default function Index() {
   };
 
   const onReload = () => {
-    const paramObject: Partial<Versions> = {};
+    const param = new URLSearchParams(currentQuery);
 
     for (const key in versionState) {
       if (versionState[key as keyof Versions]) {
-        paramObject[key as keyof Versions] =
-          versionState[key as keyof Versions];
+        param.set(key, versionState[key as keyof Versions]);
       }
     }
 
-    const param = new URLSearchParams(paramObject);
     const query = param.toString();
 
     window.location.href = query ? `/?${query}` : "/";
+  };
+
+  const identifierLink = (identifier: keyof FilteredCompatData) => {
+    const param = new URLSearchParams(currentQuery);
+    param.set("view", identifier);
+    return `/?${param.toString()}`;
   };
 
   return (
@@ -144,69 +163,130 @@ export default function Index() {
         </button>
       </div>
 
-      <IdentifierRoot
-        identifier={compat["javascript"]}
-        id="javascript"
-        name="JavaScript"
-        unwrapDepth={2}
-        badgeClass="bg-[#fcff99]"
-      />
+      <div className="grid gap-2 auto-cols-min grid-flow-col m-2 mt-4">
+        <IdentifierLink
+          link={identifierLink("javascript")}
+          active={identifier === "javascript"}
+        >
+          JavaScript
+        </IdentifierLink>
+        <IdentifierLink
+          link={identifierLink("css")}
+          active={identifier === "css"}
+        >
+          CSS
+        </IdentifierLink>
+        <IdentifierLink
+          link={identifierLink("html")}
+          active={identifier === "html"}
+        >
+          HTML
+        </IdentifierLink>
+        <IdentifierLink
+          link={identifierLink("api")}
+          active={identifier === "api"}
+        >
+          API
+        </IdentifierLink>
+        <IdentifierLink
+          link={identifierLink("http")}
+          active={identifier === "http"}
+        >
+          HTTP
+        </IdentifierLink>
+        <IdentifierLink
+          link={identifierLink("svg")}
+          active={identifier === "svg"}
+        >
+          SVG
+        </IdentifierLink>
+        <IdentifierLink
+          link={identifierLink("webextensions")}
+          active={identifier === "webextensions"}
+        >
+          WebExtensions
+        </IdentifierLink>
+      </div>
 
-      {/* <IdentifierRoot
-        identifier={compat["css"]}
-        id="css"
-        name="CSS"
-        unwrapDepth={2}
-        badgeClass="bg-[#ff99bd]"
-      />
+      {identifier === "javascript" && (
+        <IdentifierRoot
+          identifier={compat["javascript"]}
+          id="javascript"
+          name="JavaScript"
+          unwrapDepth={2}
+          badgeClass="bg-[#fcff99]"
+        />
+      )}
 
-      <IdentifierRoot
-        identifier={compat["html"]}
-        id="html"
-        name="HTML"
-        unwrapDepth={2}
-        badgeClass="bg-[#99ffa0]"
-      /> */}
-      {/* 
-      <IdentifierRoot
-        identifier={compat["svg"]}
-        id="svg"
-        name="SVG"
-        unwrapDepth={2}
-        badgeClass="bg-[#cc99ff]"
-      />
+      {identifier === "css" && (
+        <IdentifierRoot
+          identifier={compat["css"]}
+          id="css"
+          name="CSS"
+          unwrapDepth={2}
+          badgeClass="bg-[#ff99bd]"
+        />
+      )}
 
-      <IdentifierRoot
-        identifier={compat["api"]}
-        id="api"
-        name="API"
-        unwrapDepth={1}
-        badgeClass="bg-[#ff9999]"
-      />
+      {identifier === "html" && (
+        <IdentifierRoot
+          identifier={compat["html"]}
+          id="html"
+          name="HTML"
+          unwrapDepth={2}
+          badgeClass="bg-[#99ffa0]"
+        />
+      )}
 
-      <IdentifierRoot
-        identifier={compat["http"]}
-        id="http"
-        name="HTTP"
-        unwrapDepth={1}
-        badgeClass="bg-[#99afff]"
-      />
+      {identifier === "svg" && (
+        <IdentifierRoot
+          identifier={compat["svg"]}
+          id="svg"
+          name="SVG"
+          unwrapDepth={2}
+          badgeClass="bg-[#cc99ff]"
+        />
+      )}
 
-      <IdentifierRoot
-        identifier={compat["webdriver"]}
-        id="webdriver"
-        name="WebDriver"
-        unwrapDepth={1}
-        badgeClass="bg-[#c1c1c1]"
-      />
+      {identifier === "api" && (
+        <IdentifierRoot
+          identifier={compat["api"]}
+          id="api"
+          name="API"
+          unwrapDepth={1}
+          badgeClass="bg-[#ff9999]"
+        />
+      )}
 
-      <IdentifierRoot
-        identifier={compat["webextensions"]}
-        id="webextensions"
-        name="WebExtensions"
-        unwrapDepth={1}
-        badgeClass="bg-[#a2a9cd]"
-      /> */}
+      {identifier === "http" && (
+        <IdentifierRoot
+          identifier={compat["http"]}
+          id="http"
+          name="HTTP"
+          unwrapDepth={1}
+          badgeClass="bg-[#99afff]"
+        />
+      )}
+
+      {/* {identifier === "webdriver" && (
+        <IdentifierRoot
+          identifier={compat["webdriver"]}
+          id="webdriver"
+          name="WebDriver"
+          unwrapDepth={1}
+          badgeClass="bg-[#c1c1c1]"
+        />
+      )} */}
+
+      {identifier === "webextensions" && (
+        <IdentifierRoot
+          identifier={compat["webextensions"]}
+          id="webextensions"
+          name="WebExtensions"
+          unwrapDepth={1}
+          badgeClass="bg-[#a2a9cd]"
+        />
+      )}
     </div>
   );
 }

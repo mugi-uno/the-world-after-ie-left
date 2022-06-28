@@ -10,11 +10,12 @@ import {
 } from "./compatUtils";
 
 export const filter = (
-  filterFunc: (target: Identifier) => boolean
+  filterFunc: (target: Identifier) => boolean,
+  identifiers: (keyof FilteredCompatData)[] = ROOT_IDENTIFIERS
 ): FilteredCompatData => {
   let filteredCompatData: FilteredCompatData = { ...bcd };
 
-  ROOT_IDENTIFIERS.forEach((key) => {
+  identifiers.forEach((key) => {
     filteredCompatData[key] = filterIdentifier(bcd[key], filterFunc);
   });
 
@@ -44,19 +45,25 @@ export const filterIdentifier = (
   return filtered;
 };
 
-export const filterByMajorBrowsers = (versions: {
-  chrome: string;
-  safari: string;
-  edge: string;
-  firefox: string;
-}): FilteredCompatData => {
-  return filter((identifer) => {
-    if (hasSubIdentifiers(identifer)) return true;
+export const filterByMajorBrowsers = (
+  versions: {
+    chrome: string;
+    safari: string;
+    edge: string;
+    firefox: string;
+  },
+  rootIdentifier: keyof FilteredCompatData
+): FilteredCompatData => {
+  return filter(
+    (identifer) => {
+      if (hasSubIdentifiers(identifer)) return true;
 
-    return (
-      hasCompat(identifer) &&
-      isEnabledOnMajorBrowser(identifer, versions) &&
-      !isIEEnabled(identifer)
-    );
-  });
+      return (
+        hasCompat(identifer) &&
+        isEnabledOnMajorBrowser(identifer, versions) &&
+        !isIEEnabled(identifer)
+      );
+    },
+    [rootIdentifier]
+  );
 };
