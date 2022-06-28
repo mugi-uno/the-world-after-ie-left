@@ -46,12 +46,21 @@ export const loader: LoaderFunction = async ({ request }) => {
     return "";
   };
 
-  const version = {
+  let version = {
     chrome: checkVersion(param.get("chrome")),
     safari: checkVersion(param.get("safari")),
     edge: checkVersion(param.get("edge")),
     firefox: checkVersion(param.get("firefox")),
   };
+
+  if (!version.chrome && !version.safari && !version.edge && !version.firefox) {
+    version = {
+      chrome: "90",
+      safari: "13",
+      edge: "90",
+      firefox: "90",
+    };
+  }
 
   const compat = filterByMajorBrowsers(version, identifier);
 
@@ -82,6 +91,7 @@ export default function Index() {
     const param = new URLSearchParams(currentQuery);
 
     for (const key in versionState) {
+      param.delete(key);
       if (versionState[key as keyof Versions]) {
         param.set(key, versionState[key as keyof Versions]);
       }
@@ -283,7 +293,7 @@ export default function Index() {
           identifier={compat["webextensions"]!}
           id="webextensions"
           name="WebExtensions"
-          unwrapDepth={1}
+          unwrapDepth={2}
           badgeClass="bg-[#a2a9cd]"
         />
       )}
