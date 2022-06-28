@@ -43,7 +43,10 @@ export const loader: LoaderFunction = async ({ request }) => {
 
   const compat = filterByMajorBrowsers(version);
 
-  return json<LoaderData>({ compat, version });
+  return json<LoaderData>({
+    compat: { javascript: compat["javascript"] },
+    version,
+  });
 };
 
 export default function Index() {
@@ -149,7 +152,7 @@ export default function Index() {
         badgeClass="bg-[#fcff99]"
       />
 
-      <IdentifierRoot
+      {/* <IdentifierRoot
         identifier={compat["css"]}
         id="css"
         name="CSS"
@@ -163,7 +166,7 @@ export default function Index() {
         name="HTML"
         unwrapDepth={2}
         badgeClass="bg-[#99ffa0]"
-      />
+      /> */}
       {/* 
       <IdentifierRoot
         identifier={compat["svg"]}
