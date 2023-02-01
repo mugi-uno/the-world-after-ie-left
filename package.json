@@ -8,7 +8,7 @@
     "generate:compat": "ts-node -T ./app/lib/compat-data/scripts/generate.ts"
   },
   "dependencies": {
-    "@mdn/browser-compat-data": "^5.2.23",
+    "@mdn/browser-compat-data": "^5.2.33",
     "@remix-run/node": "^1.6.0",
     "@remix-run/react": "^1.6.0",
     "@remix-run/vercel": "^1.6.0",
